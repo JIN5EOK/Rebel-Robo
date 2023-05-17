@@ -11,65 +11,49 @@ public abstract class Entity : MonoBehaviour
 {
     
     [SerializeField]
-    private List<Action<Entity>> disableActions = new List<Action<Entity>>();
+    private List<Action<Entity>> disableActions;
+
+    private List<Action<Entity>> DisableActions
+    {
+        get
+        {
+            if (disableActions == null)
+                disableActions = new List<Action<Entity>>();
+            return disableActions;
+        }
+    }
     
-    private List<Action<Entity>> destroyActions = new List<Action<Entity>>();
     public virtual void Destroyed()
     {
-        Action<Entity> action;
-
-        for (int i = destroyActions.Count - 1; i >= 0; i--)
-        {
-            action = destroyActions[i];
-            action.Invoke(this);
-            if(destroyActions.Contains(action))
-                destroyActions.RemoveAt(i);
-        }
         Destroy(this.gameObject);
     }
-
-    protected virtual void OnEnable() { }
-
+    
     protected virtual void OnDisable()
     {
         Action<Entity> action;
 
-        for (int i = disableActions.Count - 1; i >= 0; i--)
+        for (int i = DisableActions.Count - 1; i >= 0; i--)
         {
-            action = disableActions[i];
+            action = DisableActions[i];
             action.Invoke(this);
-            if(disableActions.Contains(action))
-                disableActions.RemoveAt(i);
+            if(DisableActions.Contains(action))
+                DisableActions.RemoveAt(i);
         }
     }
 
     public void AddDisableAction(Action<Entity> _action)
     {
-        if (disableActions.Contains(_action))
+        if (DisableActions.Contains(_action))
             return;
         
-        disableActions.Add(_action);
+        DisableActions.Add(_action);
     }
     public void RemoveDisableAction(Action<Entity> _action)
     {
-        if (disableActions.Contains(_action) == false)
+        if (DisableActions.Contains(_action) == false)
             return;
         
-        disableActions.Remove(_action);
+        DisableActions.Remove(_action);
     }
-
-    public void AddDestroyAction(Action<Entity> _action)
-    {
-        if (destroyActions.Contains(_action))
-            return;
-        
-        destroyActions.Add(_action);
-    }
-    public void RemoveDestroyAction(Action<Entity> _action)
-    {
-        if (destroyActions.Contains(_action) == false)
-            return;
-        
-        destroyActions.Remove(_action);
-    }
+    
 }

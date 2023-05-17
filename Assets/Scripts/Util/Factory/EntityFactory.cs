@@ -13,6 +13,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 /// </summary>
 public abstract class EntityFactory<T, M> : MonoSingleton<EntityFactory<T,M>> where T : Entity where M : Enum
 {
+    
     protected Dictionary<M, string> EntityAddresses { get; set; }
     public T Spawn(M _types, Vector3 _position, Quaternion _rotation)
     {

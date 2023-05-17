@@ -1,10 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
-using Quaternion = UnityEngine.Quaternion;
-using Vector3 = UnityEngine.Vector3;
+using UnityEngine.EventSystems;
+
 
 /// <summary>
 /// 디버그용 임시 스크립트
@@ -24,50 +23,78 @@ public class DebugKeyboardInput : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit[] hits;
         
-        hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition));
+        RaycastHit[] hits;
 
-        if (Input.GetMouseButtonDown(0))
+        hits = Physics.RaycastAll(player.transform.position, Vector3.down, 3.0f);
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            foreach (var hit in hits)
+            {
+                if (hit.transform.CompareTag("TowerTile"))
+                {
+                    TowerFactory.Instance.Spawn(Towers.MissileTower, hit.transform.position + Vector3.up, Quaternion.identity);
+                    break;
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            foreach (var hit in hits)
+            {
+                if (hit.transform.CompareTag("TowerTile"))
+                {
+                    TowerFactory.Instance.Spawn(Towers.FlameTower, hit.transform.position + Vector3.up, Quaternion.identity);
+                    break;
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            foreach (var hit in hits)
+            {
+                if (hit.transform.CompareTag("TowerTile"))
+                {
+                    TowerFactory.Instance.Spawn(Towers.MissileTower, hit.transform.position + Vector3.up, Quaternion.identity);
+                    break;
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             foreach (var hit in hits)
             {
                 if (hit.transform.CompareTag("EnemyTile"))
                 {
-                    EnemyAlphaFactory.Instance.Spawn(EnemyAlphas.EnemyAlphaLv1, hit.transform.position + Vector3.up, Quaternion.identity);
-                    break;
-                }
-                if (hit.transform.CompareTag("TowerTile"))
-                {
-                    MachinegunTowerFactory.Instance.Spawn(MachinegunTowers.MachinegunTowersLv1, hit.transform.position + Vector3.up, Quaternion.identity);
+                    EnemyFactory.Instance.Spawn(Enemys.EnemyLv1, hit.transform.position + Vector3.up, Quaternion.identity);
                     break;
                 }
             }
-            
         }
-        
-        
-        if (Input.GetButton("Horizontal") == true || Input.GetButton("Vertical") == true)
+        if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            if (Input.GetAxisRaw("Horizontal") == 1)
+            foreach (var hit in hits)
             {
-                inputDir += Vector3.right;
+                if (hit.transform.CompareTag("EnemyTile"))
+                {
+                    EnemyFactory.Instance.Spawn(Enemys.EnemyLv2, hit.transform.position + Vector3.up, Quaternion.identity);
+                    break;
+                }
             }
-            else if (Input.GetAxisRaw("Horizontal") == -1)
-            {
-                inputDir += Vector3.left;
-            }
-            if (Input.GetAxisRaw("Vertical") == 1)
-            {
-                inputDir += Vector3.forward;
-            }
-            else if (Input.GetAxisRaw("Vertical") == -1)
-            {
-                inputDir += Vector3.back;
-            }
-            
-            inputDir = inputDir.normalized;
-            player.Move(inputDir);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            foreach (var hit in hits)
+            {
+                if (hit.transform.CompareTag("EnemyTile"))
+                {
+                    EnemyFactory.Instance.Spawn(Enemys.EnemyLv3, hit.transform.position + Vector3.up, Quaternion.identity);
+                    break;
+                }
+            }
+        }
+
     }
+    
 }
