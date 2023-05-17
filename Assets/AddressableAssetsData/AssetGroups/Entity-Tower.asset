@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Entity-Tower
+  m_EditorClassIdentifier: 
+  m_GroupName: Entity-Tower
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1b156e22b51605b41ab4e80d3fb19de2
+  m_SerializeEntries:
+  - m_GUID: 2261fc2e09f957347aa17da9dafbf442
+    m_Address: Assets/Prefabs/Entity/Tower/MachinegunTowerLv2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 35eaf192f0a41a643ac894049d765528
+    m_Address: Assets/Prefabs/Entity/Tower/MachinegunTowerLv1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c7149ae3d0745d247843dc09784c9bc0, type: 2}
+    - {fileID: 11400000, guid: 2bb04716c2f18614d870f855d2d3ce68, type: 2}
