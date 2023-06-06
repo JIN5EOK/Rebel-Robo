@@ -129,4 +129,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 11400000, guid: 8f1b874068aa0814faf44556674d5ff4, type: 2}
-  Projectile: 3
+  Projectile: 2
