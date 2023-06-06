@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine;
 
@@ -77,7 +76,7 @@ public class Player : Entity, IMoveable
             return;
 
         Vector3 dir = transform.TransformDirection(_vec);
-        rigid.MovePosition(transform.position + dir * status.MoveSpd * Time.deltaTime); // 나중에 Quaternion.AngleAxis 사용하여 카메라 회전값에 맞춰 이동시키는걸로 변경
+        rigid.MovePosition(transform.position + dir * status.MoveSpd * Time.deltaTime);
     }
 
     private void UseSkill(Skills _skill)
