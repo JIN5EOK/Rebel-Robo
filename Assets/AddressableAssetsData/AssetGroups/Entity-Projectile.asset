@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Entity-Projectile
+  m_EditorClassIdentifier: 
+  m_GroupName: Entity-Projectile
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f6bffb2a3a25c7541989daf748acfa21
+  m_SerializeEntries:
+  - m_GUID: d2c4a36562b4f044ca72d6cd52f690fc
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3be7140c657f9144bf649b6b6f1a105
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Flame.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d5164eaa7b26c76488449d2e4fabd007
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Missile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1cf1a9431cc3edd4fa50c40b097e5d3c
+    m_Address: Assets/Prefabs/Entity/Projectile/Player/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: dc0b9c069d23ed54299f580a09fa3be1, type: 2}
+    - {fileID: 11400000, guid: 31537117963e4ea40acae69795450eab, type: 2}
