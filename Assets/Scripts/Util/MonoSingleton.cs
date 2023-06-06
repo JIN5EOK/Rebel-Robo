@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// By Jinseok Bae
 /// <summary>
 /// MonoBehaviour를 상속받는 클래스들에 사용할 수 있는 싱글톤
 /// </summary>
