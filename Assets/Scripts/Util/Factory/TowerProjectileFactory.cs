@@ -9,7 +9,7 @@ public enum TowerProjectiles
 {
     Bullet,
     Missile,
-    Flame,
+    Flame
 }
 public class TowerProjectileFactory : EntityFactory<TowerProjectile, TowerProjectiles>
 {
