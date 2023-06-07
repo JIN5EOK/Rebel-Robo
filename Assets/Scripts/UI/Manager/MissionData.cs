@@ -29,13 +29,5 @@ public class MissionData : MonoBehaviour
         Instance = this;
         lobbyEvent = GameObject.Find("LobbyEvent").GetComponent<LobbyEvent>();
     }
-    void Awake()
-    {
-        
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

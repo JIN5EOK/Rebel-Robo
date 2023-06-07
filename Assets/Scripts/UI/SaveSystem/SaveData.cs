@@ -11,8 +11,8 @@ public class SaveData
 
     [SerializeField] public bool[] saveHero = new bool[3];
     [SerializeField] public bool[] saveTower = new bool[6];
-    [SerializeField] public bool[] saveSkill;
-    [SerializeField] public bool[] saveEquip;
+    [SerializeField] public bool[] saveSkill = new bool[3];
+    [SerializeField] public bool[] saveEquip = new bool[2];
 
     [SerializeField] public int LastClear;
     

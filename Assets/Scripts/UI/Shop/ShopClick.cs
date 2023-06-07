@@ -22,10 +22,7 @@ public class ShopClick : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void menuIndex(int index)
     {
@@ -98,7 +95,10 @@ public class ShopClick : MonoBehaviour
             saveManager.Save();
         }
     }
-    
+    public void ClickPut(int index)
+    {
+        shopEvent.putProduct(index);
+    }
 
     public void exitShop()
     {

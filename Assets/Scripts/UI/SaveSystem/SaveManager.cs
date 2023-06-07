@@ -16,19 +16,7 @@ public class SaveManager : MonoBehaviour
 
     public int coinA;
 
-    void Start()
-    {
-        /*
-        if (Instance2 != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance2 = this;
-        DontDestroyOnLoad(gameObject);
-        */
-    }
+    
     public void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();

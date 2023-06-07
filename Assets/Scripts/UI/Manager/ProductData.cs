@@ -49,8 +49,8 @@ public class ShopData
         products.Add("¹öÇÁ", new Product("¹öÇÁ", false, 12));
 
         // Equip
-        products.Add("ÃÑ", new Product("ÃÑ", true, 0));
         products.Add("¸ÁÄ¡", new Product("¸ÁÄ¡", true, 0));
+        products.Add("¸ÁÄ¡_2", new Product("¸ÁÄ¡_2", false, 20));
     }
 
     public bool IsProductPurchased(string productName)
@@ -89,7 +89,7 @@ public class ProductData : MonoBehaviour
     public int[] priceHero = new int[3] { 10, 20, 30 };
     public int[] priceTower = new int[6] { 2, 4, 6, 8, 10, 12 };
     public int[] priceSkill = new int[3] { 4, 8, 12};
-    public int[] priceEquip = new int[2] { 0, 0 };
+    public int[] priceEquip = new int[2] { 0, 20 };
 
     
     public static ProductData Instance;
@@ -118,8 +118,8 @@ public class ProductData : MonoBehaviour
         buyedSkill[2] = shopData.IsProductPurchased("¹öÇÁ");
 
         buyedEquip = new bool[2];
-        buyedEquip[0] = shopData.IsProductPurchased("ÃÑ");
-        buyedEquip[1] = shopData.IsProductPurchased("¸ÁÄ¡");
+        buyedEquip[0] = shopData.IsProductPurchased("¸ÁÄ¡");
+        buyedEquip[1] = shopData.IsProductPurchased("¸ÁÄ¡_2");
 
         priceHero = new int[3];
         priceHero[0] = shopData.GetProductPrice("Hero_1");
@@ -140,8 +140,8 @@ public class ProductData : MonoBehaviour
         priceSkill[2] = shopData.GetProductPrice("¹öÇÁ");
 
         priceEquip = new int[2];
-        priceEquip[0] = shopData.GetProductPrice("ÃÑ");
-        priceEquip[1] = shopData.GetProductPrice("¸ÁÄ¡");
+        priceEquip[0] = shopData.GetProductPrice("¸ÁÄ¡");
+        priceEquip[1] = shopData.GetProductPrice("¸ÁÄ¡_2");
     }
 
     void Start()
@@ -157,11 +157,6 @@ public class ProductData : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    void Awake()
-    {
-        
     }
 
 

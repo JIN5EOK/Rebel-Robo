@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class InGameClick : MonoBehaviour
@@ -8,67 +9,77 @@ public class InGameClick : MonoBehaviour
 
     InGameUI gameUI;
 
-    private bool ispressTower = false;
+     // 버튼을 누르고 있어야 하는 최소 시간
+    private bool isButtonDown = false;
+    
+
+
+    public int towerIndex;
     void Start()
     {
         
-        gameUI = GameObject.Find("IngameUI").GetComponent<InGameUI>();
+        gameUI = GameObject.Find("inGameUI").GetComponent<InGameUI>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void pressAttack()
-    {
-        //???? ???
-    }
-
-    public void pressTower()
-    {
-        if(!ispressTower)
+        if(isButtonDown)
         {
-            gameUI.Tower1.SetActive(true);
-            gameUI.Tower2.SetActive(true);
-            gameUI.Tower3.SetActive(true);
-            gameUI.Tower4.SetActive(true);
-            ispressTower = true;
+            gameUI.buttonDownTime += Time.deltaTime;
+            gameUI.UpdateLoadingBar();
         }
         else
         {
-            gameUI.Tower1.SetActive(false);
-            gameUI.Tower2.SetActive(false);
-            gameUI.Tower3.SetActive(false);
-            gameUI.Tower4.SetActive(false);
-            ispressTower = false;
+            gameUI.buttonDownTime = 0;
+            gameUI.UpdateLoadingBar();
         }
+    }
+    public void OnPointerDown(int index)
+    {
+        isButtonDown = true;
+        gameUI.selectedBar = index;
+    }
+
+    public void OnPointerUp(int index)
+    {
+        isButtonDown = false;
+        if(gameUI.buttonDownTime > gameUI.holdTimeThreshold)
+        {
+            if(index < 10)
+            {
+                gameUI.installTower(index);
+                gameUI.player.CreateTower((Towers)index -1);
+            }
+            else if(index == 11)
+            {
+                gameUI.repairTower();
+                
+            }
+            else if(index == 12)
+            {
+                gameUI.cellTower();
+                gameUI.player.RemoveTower();
+            }
+            
+        }
+        
+        gameUI.ResetLoadingBar(index);
         
 
     }
-    public void installTower(int index)
-    {
-        switch(index)
-        {
-            case 1:
-                //?????? ??? ???
-                break;
-            case 2:
-                //??? ???
-                break;
-            case 3:
-                //?????
-              break;
-            case 4:
-                //????
-              break;
-        }
-    }
+
+    
+
+    
+    
 
     public void pressRepair()
     {
-        //???? ?캇?
+        //장애물 파괴
+    }
+
+    public void pressCell()
+    {
+        //타워 회수
     }
 
     public void pressSkill(int index)
@@ -76,16 +87,18 @@ public class InGameClick : MonoBehaviour
         switch(index)
         {
             case 1:
-                //????
+                //버프
                 break;
             case 2:
-                //???????? ???
+                //바리게이트 설치
                 break;
             case 3:
-                //??? ???
+                //폭탄 설치
                 break;
         }
     }
+
+
 
     public void pressPause()
     {
@@ -97,7 +110,7 @@ public class InGameClick : MonoBehaviour
         switch(index)
         {
             case 1:
-                //?????
+                //재시작
                 break;
             case 2:
                 gameUI.Pausebox.SetActive(false);

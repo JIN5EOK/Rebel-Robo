@@ -65,7 +65,6 @@ public class Enemy : Entity, IMoveable, IDamageable
         ItemFactory.Instance.Spawn(Items.Energy, transform.position, Quaternion.identity);
         base.Destroyed();
     }
-
     private void ArriveDest(PlayerHQ _hq)
     {
         // 기지에 데미지 준 다음 파괴됨

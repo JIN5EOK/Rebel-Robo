@@ -142,7 +142,7 @@ public class LobbyClick : MonoBehaviour
         productData.buyedHero = new bool[3] { true, false, false };
         productData.buyedTower = new bool[6] { false, false, false, false, false, false };
         productData.buyedSkill = new bool[3] { false, false, false };
-        productData.buyedEquip = new bool[2] { true, true };
+        productData.buyedEquip = new bool[2] { true, false};
 
         saveManager.Save();
         

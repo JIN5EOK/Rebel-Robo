@@ -59,17 +59,7 @@ public class LobbyEvent : MonoBehaviour
         missionData = GameObject.Find("MissionData").GetComponent<MissionData>();
 
         bgArray = new GameObject[] { BackGround, BackGround2, BackGround3 };
-        /*
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-        */
-        //DontDestroyOnLoad(this.gameObject);
+        
     }
 
     public void Update()

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,6 +25,7 @@ public class ShopEvent : MonoBehaviour
     public int[] towers = new int[6] { 0, 1, 2, 3, 4, 5 };
     public int[] skills = new int[3] { 0, 1, 2};
     public int[] equips = new int[2] { 0, 1 };
+
 
     public int selectedMenu;
     public int selectedProduct;
@@ -54,6 +56,8 @@ public class ShopEvent : MonoBehaviour
         coinAmount.text = gameManager.coin.ToString();
 
         ChangeBuyText();
+
+        printAlreadyput();
     }
 
     public void menuIndexEvent(int index)
@@ -301,6 +305,71 @@ public class ShopEvent : MonoBehaviour
 
     }
 
+    public void putProduct(int index)
+    {
+        Transform Hchild = HeroProducts.transform.GetChild(0);
+        Transform Hchild2 = Hchild.GetChild(0);
+
+        Transform Echild = EquipProducts.transform.GetChild(0);
+        Transform Echild2 = Echild.GetChild(0);
+
+        switch(selectedMenu)
+        {
+            case 0:
+                gameManager.heroIndex = index;
+                break;
+            case 3:
+                gameManager.hammerIndex = index;
+                break;
+        }
+        
+
+    }
+    public void printAlreadyput()
+    {
+        Transform Hchild = HeroProducts.transform.GetChild(0);
+        Transform Hchild2 = Hchild.GetChild(0);
+        for(int i = 0; i < productData.buyedHero.Length; i++)
+        {
+            if (productData.buyedHero[i])
+            {
+                if (gameManager.heroIndex == i)
+                {
+                    Hchild2.GetChild(i + 6).transform.gameObject.SetActive(false);
+                    Hchild2.GetChild(i + 9).transform.gameObject.SetActive(true);
+                }
+                else
+                {
+                    Hchild2.GetChild(i + 6).transform.gameObject.SetActive(true);
+                    Hchild2.GetChild(i + 9).transform.gameObject.SetActive(false);
+                }
+            }
+            
+        }
+        
+
+        Transform Echild = EquipProducts.transform.GetChild(0);
+        Transform Echild2 = Echild.GetChild(0);
+        for(int i = 0; i < productData.buyedEquip.Length; i++)
+        {
+            if(productData.buyedEquip[i])
+            {
+                if (gameManager.hammerIndex == i)
+                {
+                    Echild2.GetChild(i + 4).transform.gameObject.SetActive(false);
+                    Echild2.GetChild(i + 6).transform.gameObject.SetActive(true);
+                }
+                else
+                {
+                    Echild2.GetChild(i + 4).transform.gameObject.SetActive(true);
+                    Echild2.GetChild(i + 6).transform.gameObject.SetActive(false);
+                }
+
+            }
+            
+        }
+        
+    }
     public void startBuying()
     {
         SelectPopup.SetActive(true);

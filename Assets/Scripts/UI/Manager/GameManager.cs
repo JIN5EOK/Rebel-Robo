@@ -16,12 +16,10 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     SaveManager saveManager;
-
-    public int weaphonIndex;
+    
+    public int heroIndex = 0;
     public int hammerIndex;
-    public int[] ingameTower = { 1, 2, 3, 4 };
-    public int[] ingameSkill = { 1, 2, 3 };
-    // Start is called before the first frame update
+
     void Start()
     {
         if (Instance != null)
@@ -34,15 +32,5 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         saveManager = GameObject.Find("SaveManager").GetComponent<SaveManager>();
-    }
-
-    private void Awake()
-    {
-        
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
