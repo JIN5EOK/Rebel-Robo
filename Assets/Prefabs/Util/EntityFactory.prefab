@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 154480381}
   - component: {fileID: 154480384}
   - component: {fileID: 154480387}
-  - component: {fileID: 3276026986394680257}
+  - component: {fileID: 2918005576911588441}
   m_Layer: 0
   m_Name: EntityFactory
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9973998762b3449c96a072f4654ec6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3276026986394680257
+--- !u!114 &2918005576911588441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,6 +93,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4099633734956167687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 488ba981b4695824c9f8506ce4cf5223, type: 3}
+  m_Script: {fileID: 11500000, guid: 9973998762b3449c96a072f4654ec6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
