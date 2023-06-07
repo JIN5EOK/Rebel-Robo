@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82f2cfe-e7df-465b-bb35-d7fa8554c049" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UITemp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UITemp/HoldingButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Skill/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Skill/Bomb.prefab" afterDir="false" />
@@ -19,7 +22,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Manager/GameManager_REMOTE_239.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Manager/GameManager_REMOTE_295.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/CameraManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/CameraManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/CameraManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UITemp/HoldingButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/InGameClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/InGameClick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/InGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/InGameUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/Joystick.cs" beforeDir="false" />
@@ -45,7 +48,6 @@
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +138,7 @@
       <workItem from="1685964948110" duration="1803000" />
       <workItem from="1685974321427" duration="975000" />
       <workItem from="1686017586199" duration="9636000" />
-      <workItem from="1686128789604" duration="5516000" />
+      <workItem from="1686128789604" duration="7063000" />
     </task>
     <servers />
   </component>

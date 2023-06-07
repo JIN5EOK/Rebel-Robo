@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+    public Player player;
+    
     public GameObject Pausebox;
 
 
-    public GameObject EnergyText;
+    public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
 
     //public GameObject LoadingBar;
@@ -31,15 +33,16 @@ public class InGameUI : MonoBehaviour
     public int textint = 0;
     void Start()
     {
+        player.EnergyChangeAction += printEnergy;
         //Image LoadingBarimage = LoadingBar.transform.Find("LoadingBar").GetComponent<Image>();
     }
 
     // Update is called once per frame
 
 
-    public void printEnergy()
+    public void printEnergy(int energy)
     {
-
+        EnergyText.text = player.Energy.ToString();
     }
 
     public void printWave()

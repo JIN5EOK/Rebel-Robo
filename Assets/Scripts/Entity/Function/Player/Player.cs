@@ -14,13 +14,18 @@ public class Player : Entity, IMoveable
     public int Energy
     {
         get => energy;
-        set => energy = Mathf.Clamp(value, 0, status.MaxEnergy);
+        set
+        {
+            energy = Mathf.Clamp(value, 0, status.MaxEnergy);
+            if(EnergyChangeAction != null)
+            EnergyChangeAction.Invoke(energy);
+        }
     }
     private Vector3 moveDir = new Vector3();
     private Vector3 rotDir = new Vector3();
     private Rigidbody rigid;
 
-    
+    public Action<int> EnergyChangeAction;
 
     [SerializeField]
     private PlayerCamera playerCamera;
@@ -34,7 +39,7 @@ public class Player : Entity, IMoveable
 
     
     private void Start()
-    {
+    { 
         Energy = 100;
         skillHandler = GetComponent<PlayerSkillHandler>();
         towerBuildHandler = GetComponent<PlayerTowerBuildHandler>();
@@ -87,12 +92,12 @@ public class Player : Entity, IMoveable
         skillHandler.Execute(_skill);   
     }
     
-    private void CreateTower(Towers _tower)
+    public void CreateTower(Towers _tower)
     {
         towerBuildHandler.BuildTower(_tower);
     }
 
-    private void RemoveTower()
+    public void RemoveTower()
     {
         towerBuildHandler.RemoveTower();
     }
@@ -143,7 +148,6 @@ public class Player : Entity, IMoveable
         while (true)
         {
             Energy += status.EnergyRecoveryPerSecond;
-            Debug.Log("현재 에너지 : " + energy);
             yield return new WaitForSeconds(1.0f);
         }
     }
