@@ -16,10 +16,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     SaveManager saveManager;
-    
+
     public int heroIndex = 0;
     public int hammerIndex;
-
     void Start()
     {
         if (Instance != null)
@@ -33,4 +32,6 @@ public class GameManager : MonoBehaviour
 
         saveManager = GameObject.Find("SaveManager").GetComponent<SaveManager>();
     }
+
+   
 }
