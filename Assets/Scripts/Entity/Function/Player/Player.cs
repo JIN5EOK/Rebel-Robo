@@ -1,10 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-<<<<<<< HEAD
-using UnityEditor.SceneManagement;
-=======
->>>>>>> feature/Entity
 using UnityEngine.InputSystem;
 using UnityEngine;
 
@@ -34,6 +30,9 @@ public class Player : Entity, IMoveable
     [SerializeField]private Pet pet;
 
     private CoolTime atkCoolTime;
+
+
+    
     private void Start()
     {
         Energy = 100;
