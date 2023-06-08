@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+    public Player player;
+    
     public GameObject Pausebox;
 
 
-    public GameObject EnergyText;
+    public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
 
     //public GameObject LoadingBar;
@@ -35,31 +37,7 @@ public class InGameUI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (currentValue < 100)
-        {
-            currentValue += loadSpeed * Time.deltaTime;
-        }
 
-
-        towerBar1.fillAmount = currentValue / 100;
-        towerBar2.fillAmount = currentValue / 100;
-        towerBar3.fillAmount = currentValue / 100;
-
-        repairBar.fillAmount = currentValue / 100;
-        cellBar.fillAmount = currentValue / 100;
-    }
-
-    public void printEnergy()
-    {
-
-    }
-
-    public void printWave()
-    {
-
-    }
 
     public void repairTower()
     {

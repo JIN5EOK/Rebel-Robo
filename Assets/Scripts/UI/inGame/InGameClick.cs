@@ -47,15 +47,17 @@ public class InGameClick : MonoBehaviour
             if(index < 10)
             {
                 gameUI.installTower(index);
-                Debug.Log("¾ÆÀ×");
+                gameUI.player.CreateTower((Towers)index -1);
             }
             else if(index == 11)
             {
                 gameUI.repairTower();
+                
             }
             else if(index == 12)
             {
                 gameUI.cellTower();
+                gameUI.player.RemoveTower();
             }
             
         }

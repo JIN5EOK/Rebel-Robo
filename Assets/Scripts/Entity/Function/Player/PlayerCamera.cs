@@ -12,7 +12,12 @@ public class PlayerCamera : MonoBehaviour
     private Vector3 lastPos;
     private Camera cam;
 
+    private Vector2 touchStartPos;
+    private bool isTouching;
+
     private float rotationX;
+
+
     public void RotationVertical(Vector3 _vec)
     {
         rotationX += _vec.y;

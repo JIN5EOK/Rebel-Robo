@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerTowerBuildHandler : MonoBehaviour
 {
     [SerializeField] private Player player;
-    
+    [SerializeField]private Transform center;
     Dictionary<Towers, int> buildCost = new Dictionary<Towers, int>();
     void Awake()
     {
@@ -20,8 +20,10 @@ public class PlayerTowerBuildHandler : MonoBehaviour
     {
         RaycastHit hit;
         TowerTile towerTile = null;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 3.0f, LayerMask.GetMask("Tile")))
+        Debug.Log("체크");
+        if (Physics.Raycast(center.position, Vector3.down, out hit, 3.0f,  1<<LayerMask.NameToLayer("Tile")))
         {
+            Debug.Log("성공");
             hit.transform.gameObject.TryGetComponent<TowerTile>(out towerTile);
         }
         return towerTile;

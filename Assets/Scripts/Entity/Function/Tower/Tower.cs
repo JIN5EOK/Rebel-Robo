@@ -19,6 +19,7 @@ public class Tower : Entity, IDemolitionable
     
     private SphereCollider rangeCol;
 
+    [SerializeField]private Transform head;
     [SerializeField]
     private TowerProjectiles Projectile;
     private void Start()
@@ -30,8 +31,21 @@ public class Tower : Entity, IDemolitionable
     }
     private void Update()
     {
+        if (target != null)
+        {
+            Vector3 dir = target.transform.position - this.transform.position;
+            dir.y = head.transform.position.y;
+            head.transform.rotation = Quaternion.Lerp(head.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 5);
+            //head.LookAt(targetPos);    
+        }
+        
+        // if(target != null)
+        //     head.transform.rotation = Quaternion.Lerp(
+        //         head.transform.rotation
+        //         , Quaternion.LookRotation(target.transform.position), Time.deltaTime * 5);
         AttackTimer();
     }
+    
     private void Attack(Enemy _target)
     {
         TowerProjectile proj = TowerProjectileFactory.Instance.Spawn(Projectile, this.transform.position, Quaternion.identity);
