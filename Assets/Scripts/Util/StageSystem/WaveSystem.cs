@@ -96,12 +96,16 @@ public class WaveSystem : MonoBehaviour
             {
                 yield return null;
             }
-            for (int i = 10; i >= 1; i--)
+
+            if (maxWaveCnt > curWaveCnt)
             {
-                Debug.Log(i + "초 후 다음 웨이브 시작");
-                yield return new WaitForSeconds(1.0f);
+                for (int i = 10; i >= 1; i--)
+                {
+                    Debug.Log(i + "초 후 다음 웨이브 시작");
+                    yield return new WaitForSeconds(1.0f);
+                }
+                CurWaveCnt++;    
             }
-            CurWaveCnt++;
         }
 
         if(OnGameClear != null)
