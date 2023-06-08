@@ -17,7 +17,7 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f6bffb2a3a25c7541989daf748acfa21
   m_SerializeEntries:
-  - m_GUID: d2c4a36562b4f044ca72d6cd52f690fc
+  - m_GUID: 8e810b2abcb4afe4083989eb17f3707a
     m_Address: Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
