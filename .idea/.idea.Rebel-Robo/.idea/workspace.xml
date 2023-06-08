@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82f2cfe-e7df-465b-bb35-d7fa8554c049" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Enemy/EnemyLv3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/HQ/HQcase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/HQ/HQcase.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Tower/FlameTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Tower/FlameTower.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DesingDevelop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DesingDevelop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Player/PlayerTowerBuildHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Player/PlayerTowerBuildHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/PlayerHQ/PlayerHQ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/PlayerHQ/PlayerHQ.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Tower/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/Tower/Tower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Factory/AddressableAutoRelease.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Factory/AddressableAutoRelease.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Cyberpunk Moonlight Sonata.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Cyberpunk Moonlight Sonata.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
