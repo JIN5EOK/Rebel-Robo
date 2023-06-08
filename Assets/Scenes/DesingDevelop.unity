@@ -29197,11 +29197,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSystem: {fileID: 1855153158}
   playerHQ: {fileID: 783027864}
+  player: {fileID: 658607063}
   curEnemyCntText: {fileID: 829214937}
   maxEnemyCntText: {fileID: 841374040}
   curWaveText: {fileID: 906662306}
   maxWaveText: {fileID: 336270405}
   hpText: {fileID: 1320440798}
+  energyText: {fileID: 1584427805}
 --- !u!4 &1486713705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4117544967360668723, guid: 9c58be5ec41f9b743a2b85d4fc57573b, type: 3}
