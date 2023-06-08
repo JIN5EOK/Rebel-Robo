@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82f2cfe-e7df-465b-bb35-d7fa8554c049" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/StageSystem/WaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/StageSystem/WaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rebel-Robo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DesingDevelop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DesingDevelop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/PlayerHQ/PlayerHQ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Function/PlayerHQ/PlayerHQ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/WaveInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/inGame/WaveInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +110,7 @@
       <workItem from="1686017586199" duration="9636000" />
       <workItem from="1686128789604" duration="7063000" />
       <workItem from="1686149777843" duration="3647000" />
+      <workItem from="1686206269196" duration="865000" />
     </task>
     <servers />
   </component>

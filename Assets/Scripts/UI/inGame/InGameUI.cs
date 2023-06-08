@@ -33,22 +33,11 @@ public class InGameUI : MonoBehaviour
     public int textint = 0;
     void Start()
     {
-        player.EnergyChangeAction += printEnergy;
         //Image LoadingBarimage = LoadingBar.transform.Find("LoadingBar").GetComponent<Image>();
     }
 
     // Update is called once per frame
 
-
-    public void printEnergy(int energy)
-    {
-        EnergyText.text = player.Energy.ToString();
-    }
-
-    public void printWave()
-    {
-
-    }
 
     public void repairTower()
     {

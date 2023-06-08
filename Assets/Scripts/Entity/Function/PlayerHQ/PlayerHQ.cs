@@ -12,9 +12,21 @@ public class PlayerHQ : Entity, IDamageable
     public static PlayerHQ instance;
     [SerializeField]
     private HQStatus status;
-    private int Hp { get; set; }
 
-    private void Awake()
+    private int hp;
+    public Action<int> OnHpChange;
+    private int Hp
+    {
+        get => hp;
+        set
+        {
+            hp = value;
+            if(OnHpChange != null)
+                OnHpChange.Invoke(value);
+        }
+    }
+
+    private void Start()
     {
         if (instance != null)
         {
