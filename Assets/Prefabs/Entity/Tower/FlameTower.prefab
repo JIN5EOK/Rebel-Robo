@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 11400000, guid: 8f1b874068aa0814faf44556674d5ff4, type: 2}
+  attackSound: 1
   head: {fileID: 6745462800900938480}
   Projectile: 2
 --- !u!1 &2769737861355149266

@@ -9,6 +9,8 @@ public class PlayerTowerBuildHandler : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField]private Transform center;
     Dictionary<Towers, int> buildCost = new Dictionary<Towers, int>();
+
+    [SerializeField]private Sfxs buildSound;
     void Awake()
     {
         buildCost.Add(Towers.MachinegunTower,50);
@@ -47,7 +49,7 @@ public class PlayerTowerBuildHandler : MonoBehaviour
             {
                 return false;
             }
-
+            AudioManager.Instance.PlaySfx(buildSound, this.transform);
             player.Energy -= cost;
             towerTile.AddEntity(TowerFactory.Instance.Spawn(_tower, transform.position, Quaternion.identity));
             return true;

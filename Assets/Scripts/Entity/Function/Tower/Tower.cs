@@ -13,6 +13,7 @@ public class Tower : Entity, IDemolitionable
     [SerializeField]
     protected TowerStatus status;
 
+    [SerializeField] private Sfxs attackSound;
     private Enemy target;
     private List<Enemy> onRangeTargets = new List<Enemy>();
     private float AttackCoolTime = 0.0f;
@@ -49,6 +50,7 @@ public class Tower : Entity, IDemolitionable
     private void Attack(Enemy _target)
     {
         TowerProjectile proj = TowerProjectileFactory.Instance.Spawn(Projectile, this.transform.position, Quaternion.identity);
+        AudioManager.Instance.PlaySfx(attackSound, this.transform);
         proj.Launch(_target, status.Dmg);
     }
     private void AttackTimer()
