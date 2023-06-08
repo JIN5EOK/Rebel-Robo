@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -29427,13 +29427,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSystem: {fileID: 1855153158}
   playerHQ: {fileID: 783027864}
-  player: {fileID: 0}
+  player: {fileID: 658607063}
   curEnemyCntText: {fileID: 829214937}
   maxEnemyCntText: {fileID: 841374040}
   curWaveText: {fileID: 906662306}
   maxWaveText: {fileID: 336270405}
   hpText: {fileID: 1320440798}
-  energyText: {fileID: 0}
+  energyText: {fileID: 1584427805}
 --- !u!4 &1486713705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4117544967360668723, guid: 9c58be5ec41f9b743a2b85d4fc57573b, type: 3}
