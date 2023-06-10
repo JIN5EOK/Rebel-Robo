@@ -25,7 +25,6 @@ public class Tower : Entity, IDemolitionable
     private TowerProjectiles Projectile;
     private void Start()
     {
-        
         rangeCol = gameObject.AddComponent<SphereCollider>();
         rangeCol.isTrigger = true;
         rangeCol.radius = status.Range;
