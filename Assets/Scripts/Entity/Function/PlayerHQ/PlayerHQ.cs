@@ -15,10 +15,7 @@ public class PlayerHQ : Entity, IDamageable
 
     private int hp;
     public Action<int> OnHpChange;
-<<<<<<< HEAD
     public Action OnHQDestroyed; // 매개변수, 반환값 없는 함수나 람다함수를 += 연산자로 추가해서 사용하시면 됩니다. 제거하고 싶을땐 -=
-=======
->>>>>>> feature/DevelopUI
     private int Hp
     {
         get => hp;
