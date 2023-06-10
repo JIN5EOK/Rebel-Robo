@@ -36,7 +36,7 @@ public class ShopData
         products.Add("Hero_3", new Product("Hero_3", false, 30));
 
         // Tower
-        products.Add("레이저 타워", new Product("레이저 타워", false, 2));
+        products.Add("레이저 타워", new Product("레이저 타워", true, 2));
         products.Add("방사 타워", new Product("방사 타워", false, 4));
         products.Add("기관총 타워", new Product("기관총 타워", false, 6));
         products.Add("로켓 타워", new Product("로켓 타워", false, 8));

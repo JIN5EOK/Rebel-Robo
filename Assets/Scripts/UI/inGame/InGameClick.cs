@@ -18,7 +18,7 @@ public class InGameClick : MonoBehaviour
     void Start()
     {
         
-        gameUI = GameObject.Find("inGameUI").GetComponent<InGameUI>();
+        gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
     }
     void Update()
     {

@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public int heroIndex = 0;
     public int hammerIndex;
 
+
+
     void Start()
     {
         if (Instance != null)

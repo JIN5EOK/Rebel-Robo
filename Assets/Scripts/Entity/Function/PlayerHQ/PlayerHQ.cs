@@ -8,14 +8,14 @@ using UnityEngine;
 /// </summary>
 public class PlayerHQ : Entity, IDamageable
 {
-    
+    [SerializeField]private Sfxs hitSound;
     public static PlayerHQ instance;
     [SerializeField]
     private HQStatus status;
 
-    private int hp=100;
+    private int hp;
     public Action<int> OnHpChange;
-    public int Hp
+    private int Hp
     {
         get => hp;
         set
@@ -45,6 +45,7 @@ public class PlayerHQ : Entity, IDamageable
 
     public void Damaged(int _dmg)
     {
+        AudioManager.Instance.PlaySfx(hitSound, this.transform);
         Hp -= _dmg;
         
         if (Hp <= 0)

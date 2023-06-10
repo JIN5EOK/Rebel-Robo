@@ -22,19 +22,10 @@ public class LobbyEvent : MonoBehaviour
     public GameObject BackGround3;
     public GameObject[] bgArray;
 
-    public GameObject Hero1;
-    public GameObject Hero2;
-    public GameObject Hero3;
-    public GameObject Hero1_black;
-    public GameObject Hero2_black;
-    public GameObject Hero3_black;
 
-    public GameObject Diffi1;
-    public GameObject Diffi2;
-    public GameObject Diffi3;
-    public GameObject Diffi1_black;
-    public GameObject Diffi2_black;
-    public GameObject Diffi3_black;
+
+    public GameObject Heros;
+    public GameObject Hammers;
 
     public bool[] HeroboolArray = { true, false, false };
     public bool[] DiffiboolArray = { true, false, false };
@@ -135,7 +126,7 @@ public class LobbyEvent : MonoBehaviour
             }
         }
 
-        
+        printEquip();
 
 
     }
@@ -205,6 +196,11 @@ public class LobbyEvent : MonoBehaviour
         
     }
 
+    private void printEquip()
+    {
+        Heros.transform.GetChild(0).transform.GetChild(gameManager.heroIndex).gameObject.SetActive(true);
+        Hammers.transform.GetChild(0).transform.GetChild(gameManager.hammerIndex).gameObject.SetActive(true);
+    }
     
 
     public void OptionClicked()
