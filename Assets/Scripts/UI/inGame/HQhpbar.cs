@@ -11,7 +11,6 @@ public class HQhpbar : MonoBehaviour
     private void OnEnable()
     {
         playerHQ.OnHpChange += (n) => hpSlider.value = n;
-
     }
 
     

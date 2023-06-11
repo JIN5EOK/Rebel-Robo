@@ -227,7 +227,7 @@ public class LobbyEvent : MonoBehaviour
 
     public void loadGame()
     {
-        SceneManager.LoadScene("inGame");
+        LoadSceneManager.LoadScene("DesingDevelop");
     }
 
 }

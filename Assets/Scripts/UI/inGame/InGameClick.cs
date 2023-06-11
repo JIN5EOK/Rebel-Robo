@@ -8,16 +8,17 @@ public class InGameClick : MonoBehaviour
 {
 
     InGameUI gameUI;
-
+    MoveText moveText;
      // 버튼을 누르고 있어야 하는 최소 시간
     private bool isButtonDown = false;
     
 
 
     public int towerIndex;
+    public int towercost;
     void Start()
     {
-        
+        moveText = GameObject.Find("Movetext").GetComponent<MoveText>();
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
     }
     void Update()
@@ -48,6 +49,18 @@ public class InGameClick : MonoBehaviour
             {
                 gameUI.installTower(index);
                 gameUI.player.CreateTower((Towers)index -1);
+                switch (index)
+                {
+                    case 1:
+                        towercost = -50;
+                        break;
+                    case 2:
+                        towercost = -100;
+                        break;
+                    case 3:
+                        towercost = -100;
+                        break;
+                }
             }
             else if(index == 11)
             {
@@ -63,7 +76,7 @@ public class InGameClick : MonoBehaviour
         }
         
         gameUI.ResetLoadingBar(index);
-        
+        moveText.MoveTextOnEnergyChange(towercost);
 
     }
 
@@ -103,8 +116,21 @@ public class InGameClick : MonoBehaviour
     public void pressPause()
     {
         gameUI.Pausebox.SetActive(true);
+        gameUI.pauseGame(0);
     }
 
+    public void pressResult(int index)
+    {
+        switch(index)
+        {
+            case 0:
+                SceneManager.LoadScene("GameLobby");
+                break;
+            case 1:
+                //재시작
+                break;
+        }
+    }
     public void PauseMenu(int index)
     {
         switch(index)
@@ -114,6 +140,7 @@ public class InGameClick : MonoBehaviour
                 break;
             case 2:
                 gameUI.Pausebox.SetActive(false);
+                gameUI.pauseGame(1);
                 break;
             case 3:
                 SceneManager.LoadScene("GameLobby");

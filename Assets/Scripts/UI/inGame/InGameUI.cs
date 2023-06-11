@@ -30,14 +30,10 @@ public class InGameUI : MonoBehaviour
     public float buttonDownTime = 0f;
     public float holdTimeThreshold = 3f;
 
+    private bool Ispause;
+
     public int textint = 0;
-    void Start()
-    {
-        //Image LoadingBarimage = LoadingBar.transform.Find("LoadingBar").GetComponent<Image>();
-    }
-
-    // Update is called once per frame
-
+    
 
     public void repairTower()
     {
@@ -117,6 +113,23 @@ public class InGameUI : MonoBehaviour
         }
         // 게이지 초기화
         
+    }
+
+    public void pauseGame(int index)
+    {
+        switch(index)
+        {
+            case 0:
+                Time.timeScale = 0;
+                Ispause = true;
+                return;
+            case 1:
+                Time.timeScale = 1;
+                Ispause = false;
+                return;
+        }
+        
+       
     }
 
 }
