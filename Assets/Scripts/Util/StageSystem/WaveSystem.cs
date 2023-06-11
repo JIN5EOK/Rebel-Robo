@@ -83,12 +83,11 @@ public class WaveSystem : MonoBehaviour
 
             if (curObstacleCnt < maxObstacleCnt)
             {
-                while (obstacle != null)
+                while (obstacle == null)
                 {
                     tileIdx = Random.Range(0, towerTiles.Length - 1);
-                    towerTiles[tileIdx]
-                        .AddEntity(ObstacleFactory.Instance.Spawn(Obstacles.Obstacle, towerTiles[tileIdx],
-                            Quaternion.identity));
+                    obstacle = ObstacleFactory.Instance.Spawn(Obstacles.Obstacle, towerTiles[tileIdx],
+                        Quaternion.identity);
                 }
                 curObstacleCnt++;
             }
