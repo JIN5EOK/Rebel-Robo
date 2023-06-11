@@ -33,25 +33,22 @@ public class PlayerTowerBuildHandler : MonoBehaviour
     
     public bool BuildTower(Towers _tower)
     {
+        int cost;
         TowerTile towerTile = TowerTileCheck();
+        
+        if (buildCost.TryGetValue(_tower, out cost) == false)
+            return false;
 
         if (towerTile == null)
             return false;
-        
-        if (towerTile.Entity != null)
+            
+        if (cost > player.Energy)
             return false;
 
-        
-        int cost;
-        if (buildCost.TryGetValue(_tower, out cost) == true)
+        if (TowerFactory.Instance.Spawn(_tower, towerTile, Quaternion.identity))
         {
-            if (cost > player.Energy)
-            {
-                return false;
-            }
             AudioManager.Instance.PlaySfx(buildSound, this.transform);
             player.Energy -= cost;
-            towerTile.AddEntity(TowerFactory.Instance.Spawn(_tower, transform.position, Quaternion.identity));
             return true;
         }
         return false;
