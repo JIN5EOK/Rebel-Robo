@@ -14,6 +14,9 @@ public class InGameUI : MonoBehaviour
     public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
 
+    public TextMeshProUGUI countText;
+    private float timer = 0f;
+    private int count = 3;
     //public GameObject LoadingBar;
     public Image towerBar1;
     public Image towerBar2;
@@ -33,8 +36,28 @@ public class InGameUI : MonoBehaviour
     private bool Ispause;
 
     public int textint = 0;
-    
 
+    private void Start()
+    {
+        countText.text = "3";
+
+        
+        InvokeRepeating(nameof(UpdateCountText), 1f, 1f);
+    }
+    private void UpdateCountText()
+    {
+        if (timer < 2f)
+        {
+            count--;
+            countText.text = count.ToString();
+            timer++;
+        }
+        else
+        {
+            countText.text = "";
+            CancelInvoke(nameof(UpdateCountText));
+        }
+    }
     public void repairTower()
     {
         textint = 11;

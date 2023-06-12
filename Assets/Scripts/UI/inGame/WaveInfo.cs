@@ -30,5 +30,7 @@ public class WaveInfo : MonoBehaviour
         waveSystem.ChangeMaxWaveCnt -= (n) => maxWaveText.text = n.ToString();
         waveSystem.ChangeCurEnemyCnt -= (n) => curEnemyCntText.text = n.ToString();
         waveSystem.ChangeMaxEnemyCnt -= (n) => maxEnemyCntText.text = n.ToString();
+        playerHQ.OnHpChange -= (n) => hpText.text = n.ToString();
+        player.EnergyChangeAction -= (n) => energyText.text = n.ToString();
     }
 }

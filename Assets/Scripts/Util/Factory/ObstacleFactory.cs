@@ -9,6 +9,7 @@ public class ObstacleFactory : EntityFactory<Obstacle, Obstacles>
 {
     private void Awake()
     {
+        base.Awake();
         EntityAddresses = new Dictionary<Obstacles, string>();
         EntityAddresses.Add(Obstacles.Obstacle, "Assets/Prefabs/Entity/Obstacle/Obatacle.prefab");
     }

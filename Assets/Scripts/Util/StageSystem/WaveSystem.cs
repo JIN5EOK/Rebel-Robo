@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class WaveSystem : MonoBehaviour
@@ -72,6 +73,8 @@ public class WaveSystem : MonoBehaviour
         
         StartCoroutine(WaveProgress());
     }
+    
+    
 
     private IEnumerator MakingObstacle()
     {
@@ -126,7 +129,7 @@ public class WaveSystem : MonoBehaviour
 
             if (maxWaveCnt > curWaveCnt)
             {
-                for (int i = 10; i >= 1; i--)
+                for (int i = 5; i >= 1; i--)
                 {
                     Debug.Log(i + "초 후 다음 웨이브 시작");
                     yield return new WaitForSeconds(1.0f);
