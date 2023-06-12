@@ -62,15 +62,16 @@ public class PlayerTowerBuildHandler : MonoBehaviour
             return false;
         if (towerTile.Entity == null)
             return false;
-        if (towerTile.Entity.GetType() == typeof(Tower))
+        if (towerTile.Entity.GetType() == typeof(Tower) || towerTile.Entity.GetType() == typeof(Obstacle))
         {
-            Tower tower = (Tower)towerTile.Entity;
+            IDemolitionable target = (IDemolitionable)towerTile.Entity;
             int tempEnergy = player.Energy;
-            towerTile.RemoveEntity(tower);
-            tower.Demolition(ref tempEnergy);
+            towerTile.RemoveEntity(towerTile.Entity);
+            target.Demolition(ref tempEnergy);
             player.Energy = tempEnergy;
             return true;
         }
+        
         return true;
     }
 }
