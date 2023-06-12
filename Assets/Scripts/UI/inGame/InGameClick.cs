@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InGameClick : MonoBehaviour
 {
+
+    
 
     InGameUI gameUI;
     MoveText moveText;
      // 버튼을 누르고 있어야 하는 최소 시간
     private bool isButtonDown = false;
-    
 
+    private Button[] buttons;
 
     public int towerIndex;
     public int towercost;
@@ -20,6 +23,9 @@ public class InGameClick : MonoBehaviour
     {
         moveText = GameObject.Find("Movetext").GetComponent<MoveText>();
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
+
+        buttons = GetComponentsInChildren<Button>();
+
     }
     void Update()
     {
@@ -116,7 +122,14 @@ public class InGameClick : MonoBehaviour
     public void pressPause()
     {
         gameUI.Pausebox.SetActive(true);
+
         gameUI.pauseGame(0);
+
+        for(int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        
     }
 
     public void pressResult(int index)
@@ -124,7 +137,7 @@ public class InGameClick : MonoBehaviour
         switch(index)
         {
             case 0:
-                SceneManager.LoadScene("GameLobby");
+                LoadSceneManager.LoadScene("GameLobby");
                 break;
             case 1:
                 //재시작
@@ -133,7 +146,8 @@ public class InGameClick : MonoBehaviour
     }
     public void PauseMenu(int index)
     {
-        switch(index)
+        LoadSceneManager.LoadScene("GameLobby");
+        switch (index)
         {
             case 1:
                 //재시작
@@ -141,12 +155,17 @@ public class InGameClick : MonoBehaviour
             case 2:
                 gameUI.Pausebox.SetActive(false);
                 gameUI.pauseGame(1);
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].interactable = true;
+                }
                 break;
             case 3:
-                SceneManager.LoadScene("GameLobby");
+                Time.timeScale = 1;
+                LoadSceneManager.LoadScene("GameLobby");
                 break;
         }
-        
+
     }
 
 }

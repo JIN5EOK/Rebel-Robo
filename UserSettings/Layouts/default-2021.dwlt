@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 19
+  controlID: 97
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 20
+  controlID: 102
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 21
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,36 +317,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Entity/Function/Player
+    - Assets/Scripts/UI/Manager
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Entity/Function/Player
+  - Assets/Scripts/UI/Manager
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Documents\develop_06_06_2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 475}
-    m_SelectedIDs: 0a710000
-    m_LastClickedID: 28938
-    m_ExpandedIDs: 0000000070700000727000007470000076700000787000007a7000007c7000007e70000080700000827000008470000086700000887000008a7000008c70000000ca9a3b
+    scrollPos: {x: 0, y: 715}
+    m_SelectedIDs: c0700000
+    m_LastClickedID: 28864
+    m_ExpandedIDs: 000000004a7000004c7000004e70000050700000527000005470000056700000587000005a7000005c7000005e7000006070000062700000647000006670000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Irregular Frames
-      m_OriginalName: Irregular Frames
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 28904
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070700000727000007470000076700000787000007a7000007c7000007e70000080700000827000008470000086700000887000008a7000008c700000
+    m_ExpandedIDs: 000000004a7000004c7000004e70000050700000527000005470000056700000587000005a7000005c7000005e70000060700000627000006470000066700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -385,8 +385,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fe6cfeff
-    m_LastClickedInstanceID: -103170
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fe6cfeff
-      m_LastClickedID: -103170
-      m_ExpandedIDs: fe6cfeff5ea1feff66a1feff16aafeff66aafeffb4d3feff00f3feff94f3feffcc12ffff6430ffffee31ffff3832ffffd834ffff703affffde3affff343bfffffc5effff7c81ffffce81ffff1c82ffff4e82ffff8282ffffc082ffff02a0ffff4ea0ffffdcfafffffa65000044660000e2660000626900009a6b0000a2e4000066160100c016010064180100f47b0100188f0100528f01006c8f0100bc8f0100da8f0100d0a801009aa9010036ac010018ae0100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e6d4feff4404ffff6633ffff8c34ffffeedaffff1eddffff2cfbfffff4ffffffc273000026c60000d8cb0000fecb000022cc0000d0cc000038ce000058cf0000a6d10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -845,7 +845,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.15296969, y: -0.12416863, z: 0.019377604, w: 0.9802073}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
