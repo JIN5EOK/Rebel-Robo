@@ -6,8 +6,12 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
-    public Player player;
+
     
+    public Player player;
+    private Button[] buttons;
+    private InGameClick inGameClick;
+
     public GameObject Pausebox;
 
 
@@ -21,7 +25,6 @@ public class InGameUI : MonoBehaviour
     public Image towerBar1;
     public Image towerBar2;
     public Image towerBar3;
-
     public Image repairBar;
     public Image cellBar;
 
@@ -37,13 +40,18 @@ public class InGameUI : MonoBehaviour
 
     public int textint = 0;
 
+    public GameObject JoyStickL;
+
+
     private void Start()
     {
         countText.text = "3";
-
-        
         InvokeRepeating(nameof(UpdateCountText), 1f, 1f);
+
+        inGameClick = FindObjectOfType<InGameClick>();
+        buttons = inGameClick.ClickButtons;
     }
+    
     private void UpdateCountText()
     {
         if (timer < 2f)
@@ -90,9 +98,10 @@ public class InGameUI : MonoBehaviour
 
     public void UpdateLoadingBar()
     {
+        
         // 버튼을 누른 시간에 따라 게이지 업데이트
         float fillAmount = Mathf.Clamp01(buttonDownTime / holdTimeThreshold);
-        
+        player.animator.SetFloat("makingPer", fillAmount);
         switch(selectedBar)
         {
             case 1:
@@ -111,7 +120,22 @@ public class InGameUI : MonoBehaviour
                 cellBar.fillAmount = fillAmount;
                 break;
         }
-        
+        if(buttonDownTime > 0)
+        {
+            JoyStickL.SetActive(false);
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].interactable = false;
+            }
+        }
+        else
+        {
+            JoyStickL.SetActive(true);
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].interactable = true;
+            }
+        }
     }
 
     public void ResetLoadingBar(int index)
@@ -137,6 +161,7 @@ public class InGameUI : MonoBehaviour
         // 게이지 초기화
         
     }
+    
 
     public void pauseGame(int index)
     {
@@ -154,5 +179,8 @@ public class InGameUI : MonoBehaviour
         
        
     }
+
+    
+
 
 }

@@ -11,6 +11,7 @@ public class TowerFactory : EntityFactory<Tower, Towers>
 {
     private void Awake()
     {
+        base.Awake();
         EntityAddresses = new Dictionary<Towers, string>();
         EntityAddresses.Add(Towers.MachinegunTower, "Assets/Prefabs/Entity/Tower/MachinegunTower.prefab");
         EntityAddresses.Add(Towers.FlameTower, "Assets/Prefabs/Entity/Tower/FlameTower.prefab");

@@ -11,6 +11,7 @@ public class WaveInfo : MonoBehaviour
     [SerializeField] private TextMeshProUGUI curEnemyCntText;
     [SerializeField] private TextMeshProUGUI maxEnemyCntText;
 
+    [SerializeField] private MoveText moveText;
     [SerializeField] private TextMeshProUGUI curWaveText;
     [SerializeField] private TextMeshProUGUI maxWaveText;
     [SerializeField] private TextMeshProUGUI hpText;
@@ -22,7 +23,13 @@ public class WaveInfo : MonoBehaviour
         waveSystem.ChangeCurEnemyCnt += (n) => curEnemyCntText.text = n.ToString();
         waveSystem.ChangeMaxEnemyCnt += (n) => maxEnemyCntText.text = n.ToString();
         playerHQ.OnHpChange += (n) => hpText.text = n.ToString();
-        player.EnergyChangeAction += (n) => energyText.text = n.ToString();
+        player.EnergyChangeAction += (n) => {
+            int before = Int32.Parse(energyText.text);
+            int after = n;
+            energyText.text = n.ToString();
+            if(Mathf.Abs(after - before) > 10)
+                moveText.MoveTextOnEnergyChange(after - before);
+        };
     }
     public void OnDisable()
     {
@@ -30,5 +37,14 @@ public class WaveInfo : MonoBehaviour
         waveSystem.ChangeMaxWaveCnt -= (n) => maxWaveText.text = n.ToString();
         waveSystem.ChangeCurEnemyCnt -= (n) => curEnemyCntText.text = n.ToString();
         waveSystem.ChangeMaxEnemyCnt -= (n) => maxEnemyCntText.text = n.ToString();
+        playerHQ.OnHpChange -= (n) => hpText.text = n.ToString();
+        player.EnergyChangeAction -= (n) =>
+        {
+            int before = Int32.Parse(energyText.text);
+            int after = n;
+            energyText.text = n.ToString();
+            if(Mathf.Abs(after - before) > 10)
+                moveText.MoveTextOnEnergyChange(after - before);
+        };
     }
 }

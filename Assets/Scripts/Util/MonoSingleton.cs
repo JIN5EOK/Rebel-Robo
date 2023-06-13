@@ -7,46 +7,45 @@ using UnityEngine;
 /// <typeparam name="T"></typeparam>
 public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    private static object mLock = new object();
-    private static T instance = null;
-    private static bool mShuttingDown = false;
+    protected static T instance;
+    public static T Instance
+    {
+        get 
+        {
+            if (instance == null)
+            {
+                var obj = GameObject.FindObjectOfType<T>();
+                if(obj == null)
+                {
+                    var newObj = new GameObject(typeof(T).Name).AddComponent<T>();
+                    instance = newObj;
+                }
+            }
+            return instance;
+        }
+    }
 
+    public virtual void Awake()
+    {
+        if(instance == null) instance = this as T;
+        else
+        {
+            if(instance != this) Destroy(gameObject);
+        }
+    }
+}
+
+public class Singleton<T> where T : class, new()
+{
+    private static T instance = null;
     public static T Instance
     {
         get
         {
-            // 한번에 한 쓰레드만 실행하도록 lock 블럭을 실행한다.
-            if(mShuttingDown)
-            {
-                return null;
-            }
+            if (instance == null)
+                instance = new T();
 
-            lock(mLock)
-            {
-                if(instance == null)
-                {
-                    instance = (T)FindObjectOfType(typeof(T));
-
-                    if(instance == null)
-                    {
-                        var singletonObejct = new GameObject();
-                        instance = singletonObejct.AddComponent<T>();
-                        singletonObejct.name = typeof(T).ToString() + "(Singleton)";
-                        DontDestroyOnLoad(singletonObejct);
-                    }
-                }
-
-                return instance;
-            }
+            return instance;
         }
-    }
-    private void OnApplicationQuit()
-    {
-        mShuttingDown = true;
-    }
-
-    private void OnDestroy()
-    {
-        mShuttingDown = true;
     }
 }

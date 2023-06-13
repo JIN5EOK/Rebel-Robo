@@ -22,10 +22,11 @@ public class MoveText : MonoBehaviour
         initialPosition = transform.position;
     }
 
-    private void Move()
-    {
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
-    }
+    // private void Move()
+    // {
+    //     transform.Translate(Vector3.up * speed * Time.deltaTime);
+    //     timer += Time.deltaTime;
+    // }
 
     private void FadeOut()
     {
@@ -40,6 +41,9 @@ public class MoveText : MonoBehaviour
 
     public void MoveTextOnEnergyChange(int energy)
     {
+        //if (isUsing == true)
+          //  return;
+        
         Transform child = transform.GetChild(0);
         child.gameObject.SetActive(true);
         textMesh.text = energy.ToString();
@@ -53,13 +57,16 @@ public class MoveText : MonoBehaviour
         StartCoroutine(MoveAndFade());
     }
 
+
+    //private bool isUsing = false;
     private System.Collections.IEnumerator MoveAndFade()
     {
-        while (timer < destroyDelay)
-        {
-            Move();
-            yield return null;
-        }
+        //isUsing = true;
+        // while (timer < destroyDelay)
+        // {
+        //     Move();
+        //     yield return null;
+        // }
 
         isFading = true;
 
@@ -71,5 +78,7 @@ public class MoveText : MonoBehaviour
 
         Transform child = transform.GetChild(0);
         child.gameObject.SetActive(false);
+        //isUsing = false;
+        
     }
 }
