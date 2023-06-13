@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c4d386d97b1ae448b9ba3638fe647dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSound: 3
   status: {fileID: 11400000, guid: cc50f9d0c8fc0c14789ee4ff03521235, type: 2}
 --- !u!65 &4264725132587436168
 BoxCollider:

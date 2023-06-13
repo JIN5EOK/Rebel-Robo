@@ -9,13 +9,14 @@ public enum TowerProjectiles
 {
     Bullet,
     Missile,
-    Flame,
+    Flame
 }
 public class TowerProjectileFactory : EntityFactory<TowerProjectile, TowerProjectiles>
 {
 
     private void Awake()
     {
+        base.Awake();
         EntityAddresses = new Dictionary<TowerProjectiles, string>();
         EntityAddresses.Add(TowerProjectiles.Bullet, "Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab");
         EntityAddresses.Add(TowerProjectiles.Missile, "Assets/Prefabs/Entity/Projectile/Tower/Missile.prefab");

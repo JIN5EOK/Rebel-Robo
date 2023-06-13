@@ -23,6 +23,7 @@ public class EnemyFactory : EntityFactory<Enemy, Enemys>
 {
     private void Awake()
     {
+        base.Awake();
         EntityAddresses = new Dictionary<Enemys, string>();
         
         EntityAddresses.Add(Enemys.EnemyLv1, "Assets/Prefabs/Entity/Enemy/EnemyLv1.prefab");

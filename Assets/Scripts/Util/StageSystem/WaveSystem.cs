@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class WaveSystem : MonoBehaviour
@@ -19,6 +20,11 @@ public class WaveSystem : MonoBehaviour
     private int maxWaveCnt;
     private int curWaveCnt;
 
+    private float GenObstalceTime = 10; 
+    private int maxObstacleCnt;
+    private int curObstacleCnt;
+
+    private TowerTile[] towerTiles;
     private int MaxWaveCnt
     {
         get => maxWaveCnt;
@@ -58,6 +64,8 @@ public class WaveSystem : MonoBehaviour
     }
     private void Start()
     {
+        towerTiles = FindObjectsOfType<TowerTile>();
+        maxObstacleCnt = towerTiles.Length / 3; // 장애물은 최대 타일의 1/3만큼만 생성하도록
         foreach (EnemyWave w in waves)
         {
             w.Init();
@@ -65,8 +73,29 @@ public class WaveSystem : MonoBehaviour
         
         StartCoroutine(WaveProgress());
     }
-
     
+    
+
+    private IEnumerator MakingObstacle()
+    {
+        Obstacle obstacle = null;
+        int tileIdx;
+        while (true)
+        {
+            yield return new WaitForSeconds(GenObstalceTime);
+
+            if (curObstacleCnt < maxObstacleCnt)
+            {
+                while (obstacle == null)
+                {
+                    tileIdx = Random.Range(0, towerTiles.Length - 1);
+                    obstacle = ObstacleFactory.Instance.Spawn(Obstacles.Obstacle, towerTiles[tileIdx],
+                        Quaternion.identity);
+                }
+                curObstacleCnt++;
+            }
+        }
+    }
     
     private IEnumerator WaveProgress()
     {
@@ -80,6 +109,7 @@ public class WaveSystem : MonoBehaviour
         CurWaveCnt = 1;
         foreach (EnemyWave w in waves)
         {
+            StartCoroutine(MakingObstacle());
             curWave = w;
             MaxEnemyCount = MaxEnemyCount;
             CurEnemyCount = CurEnemyCount;
@@ -96,12 +126,17 @@ public class WaveSystem : MonoBehaviour
             {
                 yield return null;
             }
-            for (int i = 10; i >= 1; i--)
+
+            if (maxWaveCnt > curWaveCnt)
             {
-                Debug.Log(i + "초 후 다음 웨이브 시작");
-                yield return new WaitForSeconds(1.0f);
+                for (int i = 5; i >= 1; i--)
+                {
+                    Debug.Log(i + "초 후 다음 웨이브 시작");
+                    yield return new WaitForSeconds(1.0f);
+                }
+                CurWaveCnt++;    
             }
-            CurWaveCnt++;
+            StopCoroutine(MakingObstacle());
         }
 
         if(OnGameClear != null)

@@ -8,13 +8,26 @@ using UnityEngine;
 /// </summary>
 public class PlayerHQ : Entity, IDamageable
 {
-    
+    [SerializeField]private Sfxs hitSound;
     public static PlayerHQ instance;
     [SerializeField]
     private HQStatus status;
-    private int Hp { get; set; }
 
-    private void Awake()
+    private int hp;
+    public Action<int> OnHpChange;
+    public Action OnHQDestroyed; // 매개변수, 반환값 없는 함수나 람다함수를 += 연산자로 추가해서 사용하시면 됩니다. 제거하고 싶을땐 -=
+    private int Hp
+    {
+        get => hp;
+        set
+        {
+            hp = value;
+            if(OnHpChange != null)
+                OnHpChange.Invoke(value);
+        }
+    }
+
+    private void Start()
     {
         if (instance != null)
         {
@@ -23,21 +36,18 @@ public class PlayerHQ : Entity, IDamageable
         instance = this;
 
         Hp = status.MaxHp;
-    }
 
-    public override void Destroyed()
-    {
-        Debug.Log("게임 오버...");
-        base.Destroyed();
+        OnHQDestroyed += () => { Debug.Log("게임 오버"); };
     }
 
     public void Damaged(int _dmg)
     {
+        AudioManager.Instance.PlaySfx(hitSound, this.transform);
         Hp -= _dmg;
         
-        if (Hp <= 0)
+        if (Hp <= 0 && OnHQDestroyed != null)
         {
-            Destroyed();
+            OnHQDestroyed.Invoke();
         }
     }
 }

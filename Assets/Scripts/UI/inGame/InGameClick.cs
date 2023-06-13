@@ -3,22 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InGameClick : MonoBehaviour
 {
 
-    InGameUI gameUI;
-
-     // 버튼을 누르고 있어야 하는 최소 시간
-    private bool isButtonDown = false;
     
 
+    InGameUI gameUI;
+    MoveText moveText;
+     // 버튼을 누르고 있어야 하는 최소 시간
+    private bool isButtonDown = false;
+
+    private Button[] buttons;
 
     public int towerIndex;
+    public int towercost;
     void Start()
     {
-        
-        gameUI = GameObject.Find("inGameUI").GetComponent<InGameUI>();
+        moveText = GameObject.Find("Movetext").GetComponent<MoveText>();
+        gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
+
+        buttons = GetComponentsInChildren<Button>();
+
     }
     void Update()
     {
@@ -48,6 +55,18 @@ public class InGameClick : MonoBehaviour
             {
                 gameUI.installTower(index);
                 gameUI.player.CreateTower((Towers)index -1);
+                switch (index)
+                {
+                    case 1:
+                        towercost = -50;
+                        break;
+                    case 2:
+                        towercost = -100;
+                        break;
+                    case 3:
+                        towercost = -100;
+                        break;
+                }
             }
             else if(index == 11)
             {
@@ -63,7 +82,7 @@ public class InGameClick : MonoBehaviour
         }
         
         gameUI.ResetLoadingBar(index);
-        
+        moveText.MoveTextOnEnergyChange(towercost);
 
     }
 
@@ -103,23 +122,50 @@ public class InGameClick : MonoBehaviour
     public void pressPause()
     {
         gameUI.Pausebox.SetActive(true);
+
+        gameUI.pauseGame(0);
+
+        for(int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        
     }
 
-    public void PauseMenu(int index)
+    public void pressResult(int index)
     {
         switch(index)
+        {
+            case 0:
+                LoadSceneManager.LoadScene("GameLobby");
+                break;
+            case 1:
+                //재시작
+                break;
+        }
+    }
+    public void PauseMenu(int index)
+    {
+        LoadSceneManager.LoadScene("GameLobby");
+        switch (index)
         {
             case 1:
                 //재시작
                 break;
             case 2:
                 gameUI.Pausebox.SetActive(false);
+                gameUI.pauseGame(1);
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].interactable = true;
+                }
                 break;
             case 3:
-                SceneManager.LoadScene("GameLobby");
+                Time.timeScale = 1;
+                LoadSceneManager.LoadScene("GameLobby");
                 break;
         }
-        
+
     }
 
 }

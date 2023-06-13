@@ -17,7 +17,7 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b18bd3286bc6dc946abdfd838fc28db1
   m_SerializeEntries:
-  - m_GUID: b8aa4f02502d4d2458cfa2eaa444a0ba
+  - m_GUID: 396d4e12f6c44024dbd4457b5b47f328
     m_Address: Assets/Prefabs/Entity/Skill/Bomb.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []

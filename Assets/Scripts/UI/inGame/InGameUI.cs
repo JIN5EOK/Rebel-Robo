@@ -14,6 +14,9 @@ public class InGameUI : MonoBehaviour
     public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
 
+    public TextMeshProUGUI countText;
+    private float timer = 0f;
+    private int count = 3;
     //public GameObject LoadingBar;
     public Image towerBar1;
     public Image towerBar2;
@@ -30,26 +33,31 @@ public class InGameUI : MonoBehaviour
     public float buttonDownTime = 0f;
     public float holdTimeThreshold = 3f;
 
+    private bool Ispause;
+
     public int textint = 0;
-    void Start()
+
+    private void Start()
     {
-        player.EnergyChangeAction += printEnergy;
-        //Image LoadingBarimage = LoadingBar.transform.Find("LoadingBar").GetComponent<Image>();
+        countText.text = "3";
+
+        
+        InvokeRepeating(nameof(UpdateCountText), 1f, 1f);
     }
-
-    // Update is called once per frame
-
-
-    public void printEnergy(int energy)
+    private void UpdateCountText()
     {
-        EnergyText.text = player.Energy.ToString();
+        if (timer < 2f)
+        {
+            count--;
+            countText.text = count.ToString();
+            timer++;
+        }
+        else
+        {
+            countText.text = "";
+            CancelInvoke(nameof(UpdateCountText));
+        }
     }
-
-    public void printWave()
-    {
-
-    }
-
     public void repairTower()
     {
         textint = 11;
@@ -128,6 +136,23 @@ public class InGameUI : MonoBehaviour
         }
         // 게이지 초기화
         
+    }
+
+    public void pauseGame(int index)
+    {
+        switch(index)
+        {
+            case 0:
+                Time.timeScale = 0;
+                Ispause = true;
+                return;
+            case 1:
+                Time.timeScale = 1;
+                Ispause = false;
+                return;
+        }
+        
+       
     }
 
 }
