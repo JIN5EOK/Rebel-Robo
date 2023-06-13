@@ -43,7 +43,8 @@ public class WaveInfo : MonoBehaviour
             int before = Int32.Parse(energyText.text);
             int after = n;
             energyText.text = n.ToString();
-            moveText.MoveTextOnEnergyChange(after - before);
+            if(Mathf.Abs(after - before) > 10)
+                moveText.MoveTextOnEnergyChange(after - before);
         };
     }
 }

@@ -42,7 +42,7 @@ public class Player : Entity, IMoveable
     
     private void Start()
     { 
-        Energy = 100;
+
         skillHandler = GetComponent<PlayerSkillHandler>();
         towerBuildHandler = GetComponent<PlayerTowerBuildHandler>();
         rigid = GetComponent<Rigidbody>();
