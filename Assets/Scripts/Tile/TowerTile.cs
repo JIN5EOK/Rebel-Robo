@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class TowerTile : Tile
 {
-    // Start is called before the first frame update
-    void Start()
+    public override bool AddEntity(Entity _entity)
     {
-        
-    }
+        if (Entity != null)
+            return false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (_entity.GetType() == typeof(Obstacle) || _entity.GetType() == typeof(Tower))
+        {
+            base.AddEntity(_entity);
+            return true;
+        }
+        else
+            return false;
     }
 }

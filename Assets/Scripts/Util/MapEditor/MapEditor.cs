@@ -10,14 +10,13 @@ public class MapEditor : MonoBehaviour
     public enum Tiles
     {
         TowerTile,
-        EnemyTile
+        EnemyTile,
+        UselessTile
     }
 
     public enum Entitys
     {
-        PlayerHQ,
-        Player,
-        Obstacle
+        Player
     }
     [Header("Select")]
     public Tiles selectTile;
@@ -46,7 +45,7 @@ public class MapEditor : MonoBehaviour
             }
         }
     }
-    public void Start() // 런타임시 네비메쉬 베이크 및 맵 에디터 파괴
+    public void Awake() // 런타임시 네비메쉬 베이크 및 맵 에디터 파괴
     { 
         BakeMesh();
         Destroy(this);

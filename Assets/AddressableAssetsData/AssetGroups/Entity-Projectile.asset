@@ -17,16 +17,16 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f6bffb2a3a25c7541989daf748acfa21
   m_SerializeEntries:
-  - m_GUID: d2c4a36562b4f044ca72d6cd52f690fc
-    m_Address: Assets/Prefabs/Entity/Projectile/Bullet.prefab
+  - m_GUID: 8e810b2abcb4afe4083989eb17f3707a
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: e3be7140c657f9144bf649b6b6f1a105
-    m_Address: Assets/Prefabs/Entity/Projectile/Flame.prefab
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Flame.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: d5164eaa7b26c76488449d2e4fabd007
-    m_Address: Assets/Prefabs/Entity/Projectile/Missile.prefab
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Missile.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

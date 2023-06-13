@@ -9,20 +9,30 @@ using System;
 /// </summary>
 public abstract class Entity : MonoBehaviour
 {
-    
-    [SerializeField]
-    private List<Action<Entity>> disableActions;
+    private Action<Entity> disableActions;
 
-    private List<Action<Entity>> DisableActions
+    public Action<Entity> DisableActions
     {
         get
         {
             if (disableActions == null)
-                disableActions = new List<Action<Entity>>();
+                disableActions += (e) => { };
             return disableActions;
         }
+        set => disableActions = value;
     }
-    
+    private Action<Entity> enableActions;
+
+    public Action<Entity> EnableActions
+    {
+        get
+        {
+            if (enableActions == null)
+                enableActions += (e) => { };
+            return enableActions;
+        }
+        set => enableActions = value;
+    }
     public virtual void Destroyed()
     {
         Destroy(this.gameObject);
@@ -30,30 +40,10 @@ public abstract class Entity : MonoBehaviour
     
     protected virtual void OnDisable()
     {
-        Action<Entity> action;
-
-        for (int i = DisableActions.Count - 1; i >= 0; i--)
-        {
-            action = DisableActions[i];
-            action.Invoke(this);
-            if(DisableActions.Contains(action))
-                DisableActions.RemoveAt(i);
-        }
+        DisableActions.Invoke(this);
     }
-
-    public void AddDisableAction(Action<Entity> _action)
+    protected virtual void OnEnable()
     {
-        if (DisableActions.Contains(_action))
-            return;
-        
-        DisableActions.Add(_action);
+        EnableActions.Invoke(this);
     }
-    public void RemoveDisableAction(Action<Entity> _action)
-    {
-        if (DisableActions.Contains(_action) == false)
-            return;
-        
-        DisableActions.Remove(_action);
-    }
-    
 }

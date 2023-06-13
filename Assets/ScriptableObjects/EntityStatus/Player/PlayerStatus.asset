@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: PlayerStatus
   m_EditorClassIdentifier: 
   moveSpd: 10
-  maxEnergy: 100
+  maxEnergy: 1000
+  energyRecoveryPerSecond: 5
+  atkSpd: 0.5
+  Dmg: 3

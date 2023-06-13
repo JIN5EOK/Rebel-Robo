@@ -22,8 +22,5 @@ public class TowerStatus : ScriptableObject
     [SerializeField]
     private int cost;
     public int Cost { get => cost; }
-    public int RefundCost
-    {
-        get => Cost / 2;
-    }
+    public int RefundCost { get; }
 }

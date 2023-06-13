@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyTile
   - TowerTile
+  - NormalTile
   layers:
   - Default
   - TransparentFX
@@ -17,10 +18,10 @@ TagManager:
   - Enemy
   - Tower
   - Obstacle
-  - 
-  - 
-  - 
-  - 
+  - Tile
+  - Item
+  - Barricade
+  - Bomb
   - 
   - 
   - 

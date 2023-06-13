@@ -42,11 +42,11 @@ public class MapEditorInspector : Editor
             createPos.y = editor.entityY; // 오브젝트 종류에 따라 일정한 y좌표에 생성되도록 값 설정
             if (CheckOverlap(createPos) == true) // 해당 좌표에 겹치는 오브젝트가 있으면 생성 안함
                 return;
-            if (editor.selectEntity == MapEditor.Entitys.PlayerHQ && selectType == SelectType.Entity) // 플레이어 HQ, 플레이어는 여러개 생성 불가하도록
-            {
-                foreach(PlayerHQ hq in FindObjectsOfType<PlayerHQ>())
-                    Undo.DestroyObjectImmediate(hq.gameObject);
-            }
+            // if (editor.selectEntity == MapEditor.Entitys.PlayerHQ && selectType == SelectType.Entity) // 플레이어 HQ, 플레이어는 여러개 생성 불가하도록
+            // {
+            //     foreach(PlayerHQ hq in FindObjectsOfType<PlayerHQ>())
+            //         Undo.DestroyObjectImmediate(hq.gameObject);
+            // }
             if (editor.selectEntity == MapEditor.Entitys.Player && selectType == SelectType.Entity)
             {
                 foreach(Player p in FindObjectsOfType<Player>())

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Sfx
+  m_EditorClassIdentifier: 
+  m_GroupName: Sfx
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 251205737664d154785a5f50a0e70a05
+  m_SerializeEntries:
+  - m_GUID: 96effbca899cb3949b8b53ff1d73951d
+    m_Address: Sfx/Fire1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1526c033079051844a172b748bee12af
+    m_Address: Sfx/Fire2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a8db67904e256148b0061f8507f048f
+    m_Address: Sfx/Build
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 319326b4a10247c4b9f11de346964e6d
+    m_Address: Sfx/HitHQ
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d2dc0fe5dabd0b546b9bc5e7a8630601, type: 2}
+    - {fileID: 11400000, guid: c00cbad94801f6d4fbb6c3e0eabd1563, type: 2}

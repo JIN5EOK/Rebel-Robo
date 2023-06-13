@@ -17,4 +17,13 @@ public class PlayerStatus : ScriptableObject
     [SerializeField]
     private int maxEnergy;
     public int MaxEnergy { get => maxEnergy; }
+    [SerializeField] private int energyRecoveryPerSecond;
+    public int EnergyRecoveryPerSecond
+    {
+        get => energyRecoveryPerSecond;
+    }
+
+    [SerializeField] private float atkSpd;
+    public float AtkSpd { get => atkSpd; set => atkSpd = value; }
+    public float Dmg;
 }

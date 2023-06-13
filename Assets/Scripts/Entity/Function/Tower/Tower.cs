@@ -13,28 +13,43 @@ public class Tower : Entity, IDemolitionable
     [SerializeField]
     protected TowerStatus status;
 
+    [SerializeField] private Sfxs attackSound;
     private Enemy target;
     private List<Enemy> onRangeTargets = new List<Enemy>();
     private float AttackCoolTime = 0.0f;
     
     private SphereCollider rangeCol;
 
+    [SerializeField]private Transform head;
     [SerializeField]
-    private Projectiles Projectile;
+    private TowerProjectiles Projectile;
     private void Start()
     {
-        
         rangeCol = gameObject.AddComponent<SphereCollider>();
         rangeCol.isTrigger = true;
         rangeCol.radius = status.Range;
     }
     private void Update()
     {
+        if (target != null)
+        {
+            Vector3 dir = target.transform.position - this.transform.position;
+            dir.y = head.transform.position.y;
+            head.transform.rotation = Quaternion.Lerp(head.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 5);
+            //head.LookAt(targetPos);    
+        }
+        
+        // if(target != null)
+        //     head.transform.rotation = Quaternion.Lerp(
+        //         head.transform.rotation
+        //         , Quaternion.LookRotation(target.transform.position), Time.deltaTime * 5);
         AttackTimer();
     }
+    
     private void Attack(Enemy _target)
     {
-        Projectile proj = ProjectileFactory.Instance.Spawn(Projectile, this.transform.position, Quaternion.identity);
+        TowerProjectile proj = TowerProjectileFactory.Instance.Spawn(Projectile, this.transform.position, Quaternion.identity);
+        AudioManager.Instance.PlaySfx(attackSound, this.transform);
         proj.Launch(_target, status.Dmg);
     }
     private void AttackTimer()
@@ -61,7 +76,7 @@ public class Tower : Entity, IDemolitionable
         Enemy enemy = _target as Enemy;
         if(onRangeTargets.Contains(enemy) == false)
         {
-            enemy.AddDisableAction(OutRange);
+            enemy.DisableActions += OutRange;
             onRangeTargets.Add(enemy);
         }
         if(target == null)
@@ -78,7 +93,7 @@ public class Tower : Entity, IDemolitionable
         if(onRangeTargets.Contains(enemy))
         {
             onRangeTargets.Remove(enemy);
-            enemy.RemoveDisableAction(OutRange);
+            enemy.DisableActions -= OutRange;
         }
         if (enemy == target)
         {
@@ -93,6 +108,7 @@ public class Tower : Entity, IDemolitionable
     {
         // 가격의 절반만큼 돌려받고 파괴
         _energy += status.RefundCost;
+        Destroyed();
     }
     private void OnTriggerEnter(Collider _targetCol)
     {
