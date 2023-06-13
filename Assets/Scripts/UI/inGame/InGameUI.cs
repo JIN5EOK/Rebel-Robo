@@ -90,9 +90,10 @@ public class InGameUI : MonoBehaviour
 
     public void UpdateLoadingBar()
     {
+        
         // 버튼을 누른 시간에 따라 게이지 업데이트
         float fillAmount = Mathf.Clamp01(buttonDownTime / holdTimeThreshold);
-        
+        player.animator.SetFloat("makingPer", fillAmount);
         switch(selectedBar)
         {
             case 1:

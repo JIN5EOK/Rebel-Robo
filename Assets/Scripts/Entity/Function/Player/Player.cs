@@ -9,7 +9,8 @@ public class Player : Entity, IMoveable
 {
     [SerializeField]
     public PlayerStatus status;
-    
+
+    public Animator animator;
     private int energy;
     public int Energy
     {
@@ -25,6 +26,7 @@ public class Player : Entity, IMoveable
     private Vector3 rotDir = new Vector3();
     private Rigidbody rigid;
 
+    
     public Action<int> EnergyChangeAction;
 
     [SerializeField]
@@ -80,6 +82,8 @@ public class Player : Entity, IMoveable
     
     public void Move(Vector3 _vec)
     {
+        animator.SetFloat("moveSpeed", Vector3.Magnitude(moveDir));
+        
         if (_vec == Vector3.zero)
             return;
 
