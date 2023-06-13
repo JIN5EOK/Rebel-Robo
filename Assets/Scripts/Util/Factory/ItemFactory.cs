@@ -14,6 +14,6 @@ public class ItemFactory : EntityFactory<Item, Items>
     {
         base.Awake();
         EntityAddresses = new Dictionary<Items, string>();
-        EntityAddresses.Add(Items.Energy, "Assets/Prefabs/Entity/Item/GreenBottle.prefab");
+        EntityAddresses.Add(Items.Energy, "Assets/Prefabs/Entity/Item/Bottle_Mana.prefab");
     }
 }
