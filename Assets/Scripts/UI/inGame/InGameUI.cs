@@ -6,12 +6,17 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+    public Player player;
+    
     public GameObject Pausebox;
 
 
-    public GameObject EnergyText;
+    public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
 
+    public TextMeshProUGUI countText;
+    private float timer = 0f;
+    private int count = 3;
     //public GameObject LoadingBar;
     public Image towerBar1;
     public Image towerBar2;
@@ -28,39 +33,31 @@ public class InGameUI : MonoBehaviour
     public float buttonDownTime = 0f;
     public float holdTimeThreshold = 3f;
 
+    private bool Ispause;
+
     public int textint = 0;
-    void Start()
-    {
-        //Image LoadingBarimage = LoadingBar.transform.Find("LoadingBar").GetComponent<Image>();
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (currentValue < 100)
+        countText.text = "3";
+
+        
+        InvokeRepeating(nameof(UpdateCountText), 1f, 1f);
+    }
+    private void UpdateCountText()
+    {
+        if (timer < 2f)
         {
-            currentValue += loadSpeed * Time.deltaTime;
+            count--;
+            countText.text = count.ToString();
+            timer++;
         }
-
-
-        towerBar1.fillAmount = currentValue / 100;
-        towerBar2.fillAmount = currentValue / 100;
-        towerBar3.fillAmount = currentValue / 100;
-
-        repairBar.fillAmount = currentValue / 100;
-        cellBar.fillAmount = currentValue / 100;
+        else
+        {
+            countText.text = "";
+            CancelInvoke(nameof(UpdateCountText));
+        }
     }
-
-    public void printEnergy()
-    {
-
-    }
-
-    public void printWave()
-    {
-
-    }
-
     public void repairTower()
     {
         textint = 11;
@@ -139,6 +136,23 @@ public class InGameUI : MonoBehaviour
         }
         // 게이지 초기화
         
+    }
+
+    public void pauseGame(int index)
+    {
+        switch(index)
+        {
+            case 0:
+                Time.timeScale = 0;
+                Ispause = true;
+                return;
+            case 1:
+                Time.timeScale = 1;
+                Ispause = false;
+                return;
+        }
+        
+       
     }
 
 }

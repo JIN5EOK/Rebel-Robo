@@ -11,6 +11,6 @@ public class AddressableAutoRelease : MonoBehaviour
 {
     private void OnDestroy()
     {
-        Addressables.Release(this.gameObject);
+        Addressables.ReleaseInstance(this.gameObject);
     }
 }

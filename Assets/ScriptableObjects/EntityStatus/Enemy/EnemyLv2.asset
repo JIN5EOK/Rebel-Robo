@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d4a1050061b31488b065c9344bd8d8, type: 3}
   m_Name: EnemyLv2
   m_EditorClassIdentifier: 
-  moveSpd: 2.5
-  maxHp: 25
+  moveSpd: 0.75
+  maxHp: 75
   dmg: 10

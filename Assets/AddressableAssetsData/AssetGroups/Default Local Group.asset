@@ -17,12 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: fff6d393a300cc9469986df93c9e2f75
   m_SerializeEntries:
-  - m_GUID: 7ae44542c8b6fd349a8654964ce993c9
-    m_Address: Assets/Materials/bullet.mat
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 8e810b2abcb4afe4083989eb17f3707a
-    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Bulletail.prefab
+  - m_GUID: 0ef04412c05b7b34ea54a2dcc9f03f89
+    m_Address: Assets/Prefabs/Entity/Item/GreenBottle.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

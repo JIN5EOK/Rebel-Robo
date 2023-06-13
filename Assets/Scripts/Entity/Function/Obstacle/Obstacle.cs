@@ -10,13 +10,10 @@ public class Obstacle : Entity, IDemolitionable
     [SerializeField]
     protected ObstacleStatus status;
 
-    // 에너지를 소모하여 파괴하기
+    // 파괴시 에너지 획득
     public void Demolition(ref int _energy)
     {
-        if (status.Cost > _energy)
-            return;
-
-        _energy -= status.Cost;
+        _energy += status.Cost;
         Destroyed();
     }
 }

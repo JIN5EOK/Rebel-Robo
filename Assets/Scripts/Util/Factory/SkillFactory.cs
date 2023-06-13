@@ -15,6 +15,7 @@ public class SkillFactory : EntityFactory<Skill, Skills>
 {
     private void Awake()
     {
+        base.Awake();
         EntityAddresses = new Dictionary<Skills, string>();
         EntityAddresses.Add(Skills.Bomb, "Assets/Prefabs/Entity/Skill/Bomb.prefab");
         EntityAddresses.Add(Skills.Barricade, "Assets/Prefabs/Entity/Skill/Barricade.prefab");

@@ -21,9 +21,7 @@ public class PlayerSkillHandler : MonoBehaviour
     {
         foreach(CoolTime c in skillCoolTimes.Values)
         {
-            
             c.CurCoolTime -= Time.deltaTime;
-            Debug.Log(c.CurCoolTime);
         }
     }
     
@@ -38,7 +36,6 @@ public class PlayerSkillHandler : MonoBehaviour
         skill.Execute(player, ref isSuccese);
         if(isSuccese == true)
         {
-            Debug.Log("스킬 사용 성공");
             skillCoolTimes[_skillName].Reset();
         }
     }
