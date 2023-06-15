@@ -11,6 +11,7 @@ public class InGameClick : MonoBehaviour
     
 
     InGameUI gameUI;
+    MissionManager missionManager;
     //MoveText moveText;
      // 버튼을 누르고 있어야 하는 최소 시간
     private bool isButtonDown = false;
@@ -25,6 +26,7 @@ public class InGameClick : MonoBehaviour
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
 
         buttons = GetComponentsInChildren<Button>();
+        missionManager = GameObject.Find("MissionManager").GetComponent<MissionManager>();
 
     }
     void Update()
@@ -137,10 +139,11 @@ public class InGameClick : MonoBehaviour
         switch(index)
         {
             case 0:
+                resetMissions();
                 LoadSceneManager.LoadScene("GameLobby");
                 break;
             case 1:
-                //재시작
+                resetMissions();
                 break;
         }
     }
@@ -151,6 +154,7 @@ public class InGameClick : MonoBehaviour
         {
             case 1:
                 Time.timeScale = 1;
+                resetMissions();
                 LoadSceneManager.LoadScene("DesingDevelop");
                 //재시작
                 break;
@@ -164,10 +168,19 @@ public class InGameClick : MonoBehaviour
                 break;
             case 3:
                 Time.timeScale = 1;
+                resetMissions();
                 LoadSceneManager.LoadScene("GameLobby");
                 break;
         }
 
+    }
+
+    private void resetMissions()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            missionManager.clearedMissions[0, i] = false;
+        }
     }
 
 }

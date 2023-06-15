@@ -6368,6 +6368,8 @@ MonoBehaviour:
   BackGround2: {fileID: 1881098120}
   BackGround3: {fileID: 0}
   bgArray: []
+  Missions: {fileID: 1746224733}
+  Stars: {fileID: 0}
   Heros: {fileID: 1545594846}
   Hammers: {fileID: 1902438099}
   HeroboolArray: 010000

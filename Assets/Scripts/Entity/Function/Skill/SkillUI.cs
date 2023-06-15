@@ -15,5 +15,8 @@ public class SkillUI : MonoBehaviour
     {
         image = GetComponent<Image>();
         playerSkillHandler.AddSkillCoolTimeAction(skill, (float _value) => image.fillAmount = 1 - _value);
+        
+
+
     }
 }

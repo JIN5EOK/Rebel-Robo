@@ -11,6 +11,7 @@ public class SaveManager : MonoBehaviour
     GameManager gameManager;
     ProductData productData;
     MissionData missionData;
+    MissionManager missionManager;
 
     public static SaveManager Instance;
 
@@ -31,6 +32,7 @@ public class SaveManager : MonoBehaviour
             productData.buyedSkill = loadedData.saveSkill;
             productData.buyedEquip = loadedData.saveEquip;
             gameManager.clearedStage = loadedData.LastClear;
+            missionData.clearedMission = loadedData.saveMission;
         }
         
         

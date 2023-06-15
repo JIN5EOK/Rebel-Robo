@@ -9926,6 +9926,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409832400}
   m_CullTransparentMesh: 1
+--- !u!1 &411957786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411957788}
+  - component: {fileID: 411957787}
+  m_Layer: 5
+  m_Name: MissionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &411957787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411957786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77d49eb869974b478b18dceee103307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHQ: {fileID: 783027864}
+  Stars: {fileID: 615196055}
+  Missions: {fileID: 1603629025}
+--- !u!224 &411957788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411957786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.00972, y: 1.00972, z: 1.00972}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 726.9326, y: 359.99997}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &414626323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12658,7 +12710,7 @@ RectTransform:
   m_Children:
   - {fileID: 219611752}
   m_Father: {fileID: 1666408094}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19527,7 +19579,7 @@ RectTransform:
   m_Children:
   - {fileID: 110547458}
   m_Father: {fileID: 1666408094}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36680,8 +36732,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 874792047}
   - {fileID: 588049132}
+  - {fileID: 874792047}
   m_Father: {fileID: 335456540}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36712,7 +36764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHQ: {fileID: 783027864}
   waveSystem: {fileID: 1855153158}
+  missionManager: {fileID: 0}
   ResultWindow: {fileID: 1666408093}
+  checkedHP: 0
 --- !u!1001 &1667297489
 PrefabInstance:
   m_ObjectHideFlags: 0
