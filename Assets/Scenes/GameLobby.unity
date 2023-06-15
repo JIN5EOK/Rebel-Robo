@@ -3702,7 +3702,7 @@ RectTransform:
   m_GameObject: {fileID: 498519733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3185, y: 1.7930208, z: 1}
+  m_LocalScale: {x: 1.4933331, y: 2.0307753, z: 1.1326}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544451808}
@@ -3796,7 +3796,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 4.151302, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6757,7 +6757,11 @@ RectTransform:
   m_GameObject: {fileID: 1049291833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 1.275097, y: 1.5686916, z: 1}
+=======
+  m_LocalScale: {x: 1.083999, y: 1.3232563, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1341526307}
@@ -6766,7 +6770,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -196, y: -78}
+=======
+  m_AnchoredPosition: {x: -177, y: -72}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 256, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049291835
@@ -12257,7 +12265,11 @@ RectTransform:
   m_GameObject: {fileID: 1684822270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 2.7499223, y: 2.6243534, z: 1.2080572}
+=======
+  m_LocalScale: {x: 2.2360728, y: 2.1752603, z: 0.98232}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544451808}
@@ -12265,7 +12277,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 151, y: -81}
+=======
+  m_AnchoredPosition: {x: 142, y: -76}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684822272

@@ -43,9 +43,13 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   spriteMode: 1
 =======
   spriteMode: 0
+>>>>>>> Stashed changes
+=======
+  spriteMode: 1
 >>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
@@ -112,9 +116,13 @@ TextureImporter:
     physicsShape: []
     bones: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 5e97eb03825dee720800000000000000
 =======
     spriteID: 
+>>>>>>> Stashed changes
+=======
+    spriteID: 5e97eb03825dee720800000000000000
 >>>>>>> Stashed changes
     internalID: 0
     vertices: []

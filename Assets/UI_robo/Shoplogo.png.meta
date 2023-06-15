@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d772f34989b2e584cb3e0a23b0028f86
+guid: 7f57eee192f22b149a72090396c397d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,15 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   spriteMode: 1
-=======
-  spriteMode: 0
->>>>>>> Stashed changes
-=======
-  spriteMode: 1
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,8 +68,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -115,15 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     spriteID: 5e97eb03825dee720800000000000000
-=======
-    spriteID: 
->>>>>>> Stashed changes
-=======
-    spriteID: 5e97eb03825dee720800000000000000
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
