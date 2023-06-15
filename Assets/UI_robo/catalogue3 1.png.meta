@@ -1,12 +1,34 @@
 fileFormatVersion: 2
-guid: 1b43214ca835f494cbe34db4dbb0f528
+<<<<<<<< Updated upstream:Assets/UI_robo/catalogue3 1.png.meta
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+guid: 7015d41b83e27644abfa1c8af6cd21b8
+========
+guid: 9f30ed1db3524c442a28d1efa0b08ba9
+>>>>>>>> Stashed changes:Assets/UI_robo/catalogue4.png.meta
+=======
+guid: 5d13df2e5205484488d21ddcf22a4e48
+========
+guid: 1846cf60d222b504d95dfcd35853c372
+>>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue4.png.meta
+>>>>>>> Stashed changes
+=======
+guid: 7015d41b83e27644abfa1c8af6cd21b8
+========
+guid: 1846cf60d222b504d95dfcd35853c372
+>>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue4.png.meta
+>>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
+<<<<<<< Updated upstream
     enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -39,10 +61,14 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
+<<<<<<< Updated upstream
   nPOTScale: 1
+=======
+  nPOTScale: 0
+>>>>>>> Stashed changes
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +79,11 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<< Updated upstream
   textureType: 0
+=======
+  textureType: 8
+>>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -68,8 +98,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+<<<<<<< Updated upstream
     resizeAlgorithm: 0
     textureFormat: -1
+=======
+    resizeAlgorithm: 1
+    textureFormat: 4
+>>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -107,7 +142,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
