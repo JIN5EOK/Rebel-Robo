@@ -13,8 +13,8 @@ public class TowerFactory : EntityFactory<Tower, Towers>
     {
         base.Awake();
         EntityAddresses = new Dictionary<Towers, string>();
-        EntityAddresses.Add(Towers.MachinegunTower, "Assets/Prefabs/Entity/Tower/MachinegunTower2.prefab");
-        EntityAddresses.Add(Towers.FlameTower, "Assets/Prefabs/Entity/Tower/FlameTower2.prefab");
-        EntityAddresses.Add(Towers.MissileTower, "Assets/Prefabs/Entity/Tower/MissileTower2.prefab");
+        EntityAddresses.Add(Towers.MachinegunTower, "Assets/Prefabs/Entity/Tower/MachinegunTower.prefab");
+        EntityAddresses.Add(Towers.FlameTower, "Assets/Prefabs/Entity/Tower/FlameTower.prefab");
+        EntityAddresses.Add(Towers.MissileTower, "Assets/Prefabs/Entity/Tower/MissileTower.prefab");
     }
 }
