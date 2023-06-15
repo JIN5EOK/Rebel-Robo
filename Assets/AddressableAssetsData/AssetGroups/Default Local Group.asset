@@ -25,18 +25,6 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Item/Bottle_Mana.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: beaa060c1df59324c83be9dc74484198
-    m_Address: Assets/Prefabs/Entity/Tower/MissileTower2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 0bc76e8d102ef0e418517b603e22cefc
-    m_Address: Assets/Prefabs/Entity/Tower/MachinegunTower2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f0bcd92107318ff4680b223908479852
-    m_Address: Assets/Prefabs/Entity/Tower/FlameTower2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:
