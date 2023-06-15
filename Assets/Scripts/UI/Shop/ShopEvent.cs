@@ -267,7 +267,20 @@ public class ShopEvent : MonoBehaviour
         Transform Tchild = TowerProducts.transform.GetChild(0);
         Transform Tchild2 = Tchild.GetChild(0);
 
-        for (int i = 0; i < productData.buyedTower.Length; i++)
+        int maxChildIndex = Mathf.Min(Tchild2.childCount, productData.buyedTower.Length);
+        
+        for (int i = 0; i < maxChildIndex; i++)
+        {
+            if (productData.buyedTower[i] == true)
+            {
+                Tchild2.GetChild(i).transform.gameObject.SetActive(false);
+                Tchild2.GetChild(i + 6).transform.gameObject.SetActive(true);
+            }
+        }
+
+/*
+
+        for (int i = 0; i < maxChildIndex; i++)
         {
 
             if (productData.buyedTower[i] == true)
@@ -277,6 +290,9 @@ public class ShopEvent : MonoBehaviour
                 
             }
         }
+
+*/
+
         Transform Schild = SkillProducts.transform.GetChild(0);
         Transform Schild2 = Schild.GetChild(0);
 
