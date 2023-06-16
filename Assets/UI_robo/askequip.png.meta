@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/UI_robo/Shoplogo.png.meta
-guid: 7f57eee192f22b149a72090396c397d5
-========
-guid: 4d3ddba1e3f7f0d48a8aaa3b754b023a
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/coin.png.meta
+guid: 008603e7b13c84c45b6f0cb2926280ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

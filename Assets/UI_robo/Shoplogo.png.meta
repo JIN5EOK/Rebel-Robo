@@ -1,24 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-<<<<<<<< Updated upstream:Assets/UI_robo/Shoplogo.png.meta
 guid: 7f57eee192f22b149a72090396c397d5
-========
-guid: 4d3ddba1e3f7f0d48a8aaa3b754b023a
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/coin.png.meta
-=======
-guid: 7f57eee192f22b149a72090396c397d5
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
     enableMipMap: 0
-=======
-    enableMipMap: 1
->>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -51,17 +39,10 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-<<<<<<< Updated upstream
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-=======
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,11 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-<<<<<<< Updated upstream
   textureType: 8
-=======
-  textureType: 0
->>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -91,13 +68,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< Updated upstream
-    resizeAlgorithm: 1
-    textureFormat: 4
-=======
     resizeAlgorithm: 0
     textureFormat: -1
->>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -135,11 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
     spriteID: 5e97eb03825dee720800000000000000
-=======
-    spriteID: 
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 

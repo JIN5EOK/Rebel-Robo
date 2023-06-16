@@ -34,6 +34,7 @@ public class GameExit : MonoBehaviour
         if (checkedHP <= 0)
         {
             Debug.Log("클리어 실패");
+            Time.timeScale = 0;
             ResultWindow.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
@@ -41,6 +42,7 @@ public class GameExit : MonoBehaviour
     private void ActivateResultWindow()
     {
         Debug.Log("클리어!");
+        Time.timeScale = 0;
         ResultWindow.transform.GetChild(1).gameObject.SetActive(true);
     }
 }

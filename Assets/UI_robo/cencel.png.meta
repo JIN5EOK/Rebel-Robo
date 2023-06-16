@@ -1,34 +1,12 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/UI_robo/coin.png.meta
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-guid: 9f5a67ab8496c8c4795cbdc231ce7a45
-========
-guid: 0fc46094f562f3a4da791be98698ac91
->>>>>>>> Stashed changes:Assets/UI_robo/catalogue1.png.meta
-=======
-guid: 2e5d65189efabaf4182e1217c7cfb347
-========
-guid: 1e033c41bab34184dbbd51dc0a320c7f
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> Stashed changes
-=======
-guid: 9f5a67ab8496c8c4795cbdc231ce7a45
-========
-guid: 1e033c41bab34184dbbd51dc0a320c7f
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
+guid: 12d2111103074cb488e937519921d0b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -61,36 +39,10 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-<<<<<<< Updated upstream
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-=======
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<<< Updated upstream:Assets/UI_robo/coin.png.meta
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
-<<<<<<< Updated upstream
-  spriteMode: 0
-=======
   spriteMode: 1
->>>>>>> Stashed changes
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-========
-  spriteMode: 1
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> Stashed changes
-=======
-========
-  spriteMode: 1
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,11 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-<<<<<<< Updated upstream
-  textureType: 0
-=======
   textureType: 8
->>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -120,13 +68,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< Updated upstream
-    resizeAlgorithm: 0
-    textureFormat: -1
-=======
     resizeAlgorithm: 1
     textureFormat: 4
->>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -164,28 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<<< Updated upstream:Assets/UI_robo/coin.png.meta
-<<<<<<< Updated upstream
-=======
-<<<<<<<< Updated upstream:Assets/UI_robo/coin.png.meta
->>>>>>> Stashed changes
-<<<<<<< Updated upstream
-    spriteID: 
-=======
     spriteID: 5e97eb03825dee720800000000000000
->>>>>>> Stashed changes
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-========
-    spriteID: 5e97eb03825dee720800000000000000
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> Stashed changes
-=======
-========
-    spriteID: 5e97eb03825dee720800000000000000
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue1.png.meta
->>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
     internalID: 0
     vertices: []
     indices: 
