@@ -11,6 +11,7 @@ public class InGameClick : MonoBehaviour
     
 
     InGameUI gameUI;
+    MissionManager missionManager;
     //MoveText moveText;
      // 버튼을 누르고 있어야 하는 최소 시간
     private bool isButtonDown = false;
@@ -20,6 +21,7 @@ public class InGameClick : MonoBehaviour
     {
         get { return clickbuttons; }
     }
+
     public int towerIndex;
     public int towercost;
     void Start()
@@ -28,6 +30,7 @@ public class InGameClick : MonoBehaviour
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
 
         clickbuttons = GetComponentsInChildren<Button>();
+        missionManager = GameObject.Find("MissionManager").GetComponent<MissionManager>();
 
     }
     void Update()
@@ -128,7 +131,10 @@ public class InGameClick : MonoBehaviour
 
         gameUI.pauseGame(0);
 
-        
+        for(int i = 0; i < clickbuttons.Length; i++)
+        {
+            clickbuttons[i].interactable = false;
+        }
         
     }
 
@@ -137,11 +143,11 @@ public class InGameClick : MonoBehaviour
         switch(index)
         {
             case 0:
-                Time.timeScale = 1;
+                resetMissions();
                 LoadSceneManager.LoadScene("GameLobby");
                 break;
             case 1:
-                Time.timeScale = 1;
+                resetMissions();
                 break;
         }
     }
@@ -152,19 +158,33 @@ public class InGameClick : MonoBehaviour
         {
             case 1:
                 Time.timeScale = 1;
+                resetMissions();
                 LoadSceneManager.LoadScene("DesingDevelop");
                 //재시작
                 break;
             case 2:
                 gameUI.Pausebox.SetActive(false);
                 gameUI.pauseGame(1);
+                for (int i = 0; i < clickbuttons.Length; i++)
+                {
+                    clickbuttons[i].interactable = true;
+                }
                 break;
             case 3:
                 Time.timeScale = 1;
+                resetMissions();
                 LoadSceneManager.LoadScene("GameLobby");
                 break;
         }
 
+    }
+
+    private void resetMissions()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            missionManager.stageMissions[0, i] = false;
+        }
     }
 
 }
