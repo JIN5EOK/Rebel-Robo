@@ -1,34 +1,12 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/UI_robo/catalogue2 1.png.meta
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-guid: 5a3f1a8c5b2c3014dad98baf794dc865
-========
-guid: 14676a00bf0df7049ac508daf73cc047
->>>>>>>> Stashed changes:Assets/UI_robo/catalogue3.png.meta
-=======
-guid: da3eb224650b4b44e8ddf951a42088af
-========
-guid: 2faae0d12c4d336428272b1a6351afc1
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue3.png.meta
->>>>>>> Stashed changes
-=======
-guid: 5a3f1a8c5b2c3014dad98baf794dc865
-========
-guid: 2faae0d12c4d336428272b1a6351afc1
->>>>>>>> Stashed changes:Assets/UI_robo/needtrans/catalogue3.png.meta
->>>>>>> 11647912c1a3ac41dfada625574e5a059d11a263
+guid: dc48b38d8cf08424ab5b702e4f462e49
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-<<<<<<< Updated upstream
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> Stashed changes
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -61,11 +39,7 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-<<<<<<< Updated upstream
-  nPOTScale: 1
-=======
   nPOTScale: 0
->>>>>>> Stashed changes
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
@@ -79,11 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-<<<<<<< Updated upstream
-  textureType: 0
-=======
   textureType: 8
->>>>>>> Stashed changes
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -98,13 +68,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< Updated upstream
-    resizeAlgorithm: 0
-    textureFormat: -1
-=======
     resizeAlgorithm: 1
     textureFormat: 4
->>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
