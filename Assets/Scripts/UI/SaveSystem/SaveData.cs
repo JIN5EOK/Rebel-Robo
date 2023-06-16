@@ -37,12 +37,7 @@ public class SaveData
     public SaveData(int t_savedCoin, bool[] t_saveHero, bool[] t_saveTower, bool[] t_saveSkill, bool[] t_saveEquip, int t_LastClear, bool[,] t_saveMission)
     {
         savedCoin = t_savedCoin;
-        //saveHero = t_saveHero;
-        //saveTower = t_saveTower;
-        //saveSkill = t_saveSkill;
-        //saveEquip = t_saveEquip;
-        //LastClear = t_LastClear;
-        //saveMission = t_saveMission;
+        
 
         // saveHero 배열 복사
         saveHero = new bool[t_saveHero.Length];
@@ -60,7 +55,7 @@ public class SaveData
         LastClear = t_LastClear;
 
         saveMission = new bool[t_saveMission.GetLength(0), t_saveMission.GetLength(1)];
-        Array.Copy(t_saveMission, saveMission, t_saveMission.GetLength(0) * t_saveMission.GetLength(1));
+        Array.Copy(t_saveMission, 0,saveMission, 0,t_saveMission.GetLength(0) * t_saveMission.GetLength(1));
 
 
     }

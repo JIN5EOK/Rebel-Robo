@@ -16,7 +16,11 @@ public class InGameClick : MonoBehaviour
      // 버튼을 누르고 있어야 하는 최소 시간
     private bool isButtonDown = false;
 
-    private Button[] buttons;
+    private Button[] clickbuttons;
+    public Button[] ClickButtons
+    {
+        get { return clickbuttons; }
+    }
 
     public int towerIndex;
     public int towercost;
@@ -25,7 +29,7 @@ public class InGameClick : MonoBehaviour
         //moveText = GameObject.Find("Movetext").GetComponent<MoveText>();
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
 
-        buttons = GetComponentsInChildren<Button>();
+        clickbuttons = GetComponentsInChildren<Button>();
         missionManager = GameObject.Find("MissionManager").GetComponent<MissionManager>();
 
     }
@@ -127,9 +131,9 @@ public class InGameClick : MonoBehaviour
 
         gameUI.pauseGame(0);
 
-        for(int i = 0; i < buttons.Length; i++)
+        for(int i = 0; i < clickbuttons.Length; i++)
         {
-            buttons[i].interactable = false;
+            clickbuttons[i].interactable = false;
         }
         
     }
@@ -161,9 +165,9 @@ public class InGameClick : MonoBehaviour
             case 2:
                 gameUI.Pausebox.SetActive(false);
                 gameUI.pauseGame(1);
-                for (int i = 0; i < buttons.Length; i++)
+                for (int i = 0; i < clickbuttons.Length; i++)
                 {
-                    buttons[i].interactable = true;
+                    clickbuttons[i].interactable = true;
                 }
                 break;
             case 3:
@@ -179,7 +183,7 @@ public class InGameClick : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            missionManager.clearedMissions[0, i] = false;
+            missionManager.stageMissions[0, i] = false;
         }
     }
 

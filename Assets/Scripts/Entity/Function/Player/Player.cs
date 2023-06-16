@@ -194,5 +194,8 @@ public class Player : Entity, IMoveable
     {
         Attack(); 
     }
-    
+    public PlayerSkillHandler GetPlayerSkillHandler()
+    {
+        return skillHandler;
+    }
 }
