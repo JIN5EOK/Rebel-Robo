@@ -25,6 +25,18 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Item/Bottle_Mana.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 84a8569cf2943644ab3fe67e97ec06eb
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 247e88bb6672c1142ab6f78b85c97fc2
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 74405a89dc18bd9419866f79e8d7ec46
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:
