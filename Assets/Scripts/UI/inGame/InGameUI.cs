@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+
+    
     public Player player;
     private Button[] buttons;
     private InGameClick inGameClick;
+
     public GameObject Pausebox;
-    public GameObject JoyStickL;
+
 
     public TextMeshProUGUI EnergyText;
     public GameObject WaveText;
@@ -22,11 +25,8 @@ public class InGameUI : MonoBehaviour
     public Image towerBar1;
     public Image towerBar2;
     public Image towerBar3;
-
     public Image repairBar;
     public Image cellBar;
-
-
 
     public int selectedBar;
 
@@ -40,6 +40,9 @@ public class InGameUI : MonoBehaviour
 
     public int textint = 0;
 
+    public GameObject JoyStickL;
+
+
     private void Start()
     {
         countText.text = "3";
@@ -48,6 +51,7 @@ public class InGameUI : MonoBehaviour
         inGameClick = FindObjectOfType<InGameClick>();
         buttons = inGameClick.ClickButtons;
     }
+    
     private void UpdateCountText()
     {
         if (timer < 2f)
@@ -116,7 +120,7 @@ public class InGameUI : MonoBehaviour
                 cellBar.fillAmount = fillAmount;
                 break;
         }
-        if (buttonDownTime > 0)
+        if(buttonDownTime > 0)
         {
             JoyStickL.SetActive(false);
             for (int i = 0; i < buttons.Length; i++)
@@ -157,6 +161,7 @@ public class InGameUI : MonoBehaviour
         // 게이지 초기화
         
     }
+    
 
     public void pauseGame(int index)
     {
@@ -174,5 +179,8 @@ public class InGameUI : MonoBehaviour
         
        
     }
+
+    
+
 
 }

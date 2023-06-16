@@ -9,7 +9,7 @@ public class Player : Entity, IMoveable
 {
     [SerializeField]
     public PlayerStatus status;
-    public static Player Instance { get; private set; }
+
     public Animator animator;
     private int energy;
     public int Energy
@@ -194,8 +194,5 @@ public class Player : Entity, IMoveable
     {
         Attack(); 
     }
-    public PlayerSkillHandler GetPlayerSkillHandler()
-    {
-        return skillHandler;
-    }
+    
 }

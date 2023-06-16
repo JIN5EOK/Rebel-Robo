@@ -8,7 +8,6 @@ public class LobbyClick : MonoBehaviour
     GameManager gameManager;
     SaveManager saveManager;
     ProductData productData;
-    MissionData missionData;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +15,6 @@ public class LobbyClick : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         saveManager = GameObject.Find("SaveManager").GetComponent <SaveManager>();
         productData = GameObject.Find("ProductData").GetComponent<ProductData>();
-        missionData = GameObject.Find("MissionData").GetComponent<MissionData>();
     }
 
     // Update is called once per frame
@@ -145,12 +143,6 @@ public class LobbyClick : MonoBehaviour
         productData.buyedTower = new bool[6] { true, false, false, false, false, false };
         productData.buyedSkill = new bool[3] { false, false, false };
         productData.buyedEquip = new bool[2] { true, false};
-
-        missionData.clearedMission = new bool[5,3] { { false, false, false },
-                                        { false, false, false },
-                                        { false, false, false },
-                                        { false, false, false },
-                                        { true, true, true} };
 
         saveManager.Save();
         
