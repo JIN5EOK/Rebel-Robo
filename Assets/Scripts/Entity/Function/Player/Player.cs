@@ -139,6 +139,7 @@ public class Player : Entity, IMoveable
         {
             if(hit.transform.TryGetComponent(out enemy))
             {
+                AttackCount++;
                 targetPos = hit.point;
                 TowerProjectile b = TowerProjectileFactory.Instance.Spawn(TowerProjectiles.Bullet, pet.transform.position, Quaternion.identity);
                 b.Launch(hit.transform.gameObject.GetComponent<Enemy>(), (int)status.Dmg);
@@ -146,7 +147,7 @@ public class Player : Entity, IMoveable
                 atkCoolTime.Reset();
 
                 // 공격 횟수 증가
-                AttackCount++;
+                
             }
         }
     }

@@ -25,7 +25,7 @@ public class MissionManager : MonoBehaviour
     public bool[,] stageMissions = new bool[1, 3];
     void Start()
     {
-        
+
         gameExit = GameObject.Find("GameResult").GetComponent<GameExit>();
         missionData = Dataobj.GetComponent<MissionData>();
 
@@ -36,9 +36,9 @@ public class MissionManager : MonoBehaviour
         gameUI = GameObject.Find("inGameEvent").GetComponent<InGameUI>();
         player = playerObj.GetComponent<Player>();
     }
-    
-    
-    
+
+
+
     private void printMissionResult()
     {
 
@@ -50,7 +50,7 @@ public class MissionManager : MonoBehaviour
 
         for (int i = 0; i < 3; i++)
         {
-            if(stageMissions[0, i])
+            if (stageMissions[0, i])
             {
                 Debug.Log(i);
                 Stars.transform.GetChild(i).gameObject.SetActive(false);
@@ -58,16 +58,16 @@ public class MissionManager : MonoBehaviour
             }
         }
 
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
-            MissionsText[i].text = missionData.missionName[0,i];
-            
+            MissionsText[i].text = missionData.missionName[0, i];
+
         }
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
-            missionData.clearedMission[0,i] = stageMissions[0,i];
+            missionData.clearedMission[0, i] = stageMissions[0, i];
         }
-        if (missionData.clearedMission[0,0] == true)
+        if (missionData.clearedMission[0, 0] == true)
         {
             Debug.Log("¼º°ø");
         }
