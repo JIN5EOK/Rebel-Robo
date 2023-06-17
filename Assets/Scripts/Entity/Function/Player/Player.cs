@@ -40,6 +40,8 @@ public class Player : Entity, IMoveable
 
     [SerializeField] private Sfxs attackSound;
     
+    public int AttackCount = 0;
+
     private void Start()
     { 
 
@@ -142,6 +144,9 @@ public class Player : Entity, IMoveable
                 b.Launch(hit.transform.gameObject.GetComponent<Enemy>(), (int)status.Dmg);
                 AudioManager.Instance.PlaySfx(attackSound, pet.transform);
                 atkCoolTime.Reset();
+
+                // 공격 횟수 증가
+                AttackCount++;
             }
         }
     }
