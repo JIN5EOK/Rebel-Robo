@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnergyItem : Item
 {
+    
     [SerializeField] int energy;
     protected override void GetItem()
     {

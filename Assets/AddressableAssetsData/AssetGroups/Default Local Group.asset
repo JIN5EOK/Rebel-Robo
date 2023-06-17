@@ -33,10 +33,6 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Enemy/enemy1.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 0a23e37a4cf75cc44908400742c50b63
-    m_Address: Assets/Prefabs/Entity/Skill/xBarricade.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: f209afa623240b243b974b5d627e0b12
     m_Address: Assets/Prefabs/Entity/Enemy/enemy2.prefab
     m_ReadOnly: 0

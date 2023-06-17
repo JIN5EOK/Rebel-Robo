@@ -171,6 +171,7 @@ MonoBehaviour:
   playerCamera: {fileID: 7723880948106619502}
   pet: {fileID: 7723880948856325309}
   attackSound: 0
+  AttackCount: 0
 --- !u!54 &7723880947546735611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7723880948662571766}
   center: {fileID: 7150230346981391784}
-  buildSound: 0
+  buildSound: 2
 --- !u!114 &-7710920673965330894
 MonoBehaviour:
   m_ObjectHideFlags: 0

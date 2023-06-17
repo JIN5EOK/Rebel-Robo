@@ -6,6 +6,8 @@ public abstract class Item : Entity
 {
     protected Player player;
     protected Action GetItemAction;
+
+    [SerializeField] Sfxs getSound;
     protected abstract void GetItem();
 
     public void Awake()
@@ -19,6 +21,7 @@ public abstract class Item : Entity
         {
             if (other.TryGetComponent(out player) && GetItemAction != null)
             {
+                AudioManager.Instance.PlaySfx(getSound);
                 GetItemAction.Invoke();
                 Destroyed();
             }

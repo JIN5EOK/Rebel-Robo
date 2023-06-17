@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Skill/Bomb.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: df1a71ab1ac50534e9b5621a6483b22e
+  - m_GUID: 0a23e37a4cf75cc44908400742c50b63
     m_Address: Assets/Prefabs/Entity/Skill/Barricade.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []

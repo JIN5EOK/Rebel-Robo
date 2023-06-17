@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
     public int clearedStage = 0;
 
     public static GameManager Instance;
-    SaveManager saveManager;
-    
+
     public int heroIndex = 0;
     public int hammerIndex;
 
@@ -32,7 +31,5 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        saveManager = GameObject.Find("SaveManager").GetComponent<SaveManager>();
     }
 }

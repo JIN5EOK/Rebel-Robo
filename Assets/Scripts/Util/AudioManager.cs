@@ -5,17 +5,22 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Audio;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.SceneManagement;
+
 public enum Sfxs
 {
     Fire1,
     Fire2,
     Build,
+    Item,
     HitHQ
+
 }
 
 public enum Bgms
 {
-    Main
+    Main,
+    Stage
 }
 
 
@@ -34,9 +39,24 @@ public class AudioManager : MonoSingleton<AudioManager>
 
     private void Start()
     {
+        DontDestroyOnLoad(this);
         Init();
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        switch (scene.name)
+        {
+            case "GameLobby" :
+                PlayBgm(Bgms.Main);
+                break;
+            case "DesingDevelop" :
+                PlayBgm(Bgms.Stage);
+                break;
+        }
+    }
+    
     private void Init()
     {
         foreach(Sfxs s in Enum.GetValues(typeof(Sfxs)))
