@@ -31,7 +31,6 @@ public class SaveManager : MonoBehaviour
             productData.buyedSkill = loadedData.saveSkill;
             productData.buyedEquip = loadedData.saveEquip;
             gameManager.clearedStage = loadedData.LastClear;
-            missionData.clearedMission = loadedData.saveMission;
         }
         
         

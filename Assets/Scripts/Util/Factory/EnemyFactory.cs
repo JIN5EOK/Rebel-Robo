@@ -26,8 +26,8 @@ public class EnemyFactory : EntityFactory<Enemy, Enemys>
         base.Awake();
         EntityAddresses = new Dictionary<Enemys, string>();
         
-        EntityAddresses.Add(Enemys.EnemyLv1, "Assets/Prefabs/Entity/Enemy/EnemyLv1.prefab");
-        EntityAddresses.Add(Enemys.EnemyLv2, "Assets/Prefabs/Entity/Enemy/EnemyLv2.prefab");
-        EntityAddresses.Add(Enemys.EnemyLv3, "Assets/Prefabs/Entity/Enemy/EnemyLv3.prefab");
+        EntityAddresses.Add(Enemys.EnemyLv1, "Assets/Prefabs/Entity/Enemy/enemy1.prefab");
+        EntityAddresses.Add(Enemys.EnemyLv2, "Assets/Prefabs/Entity/Enemy/enemy2.prefab");
+        EntityAddresses.Add(Enemys.EnemyLv3, "Assets/Prefabs/Entity/Enemy/enemy3.prefab");
     }
 }

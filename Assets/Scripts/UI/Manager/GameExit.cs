@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +8,8 @@ public class GameExit : MonoBehaviour
     [SerializeField] private WaveSystem waveSystem;
 
     public GameObject ResultWindow;
-    public int checkedHP;
+    private int checkedHP;
     private int checkedWave;
-    public Action OnActivateResultWindow;
 
     private void OnEnable()
     {
@@ -46,6 +44,5 @@ public class GameExit : MonoBehaviour
         Debug.Log("Å¬¸®¾î!");
         Time.timeScale = 0;
         ResultWindow.transform.GetChild(1).gameObject.SetActive(true);
-        OnActivateResultWindow?.Invoke();
     }
 }

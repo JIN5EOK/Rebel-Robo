@@ -6368,8 +6368,6 @@ MonoBehaviour:
   BackGround2: {fileID: 1881098120}
   BackGround3: {fileID: 0}
   bgArray: []
-  Missions: {fileID: 1746224733}
-  Stars: {fileID: 0}
   Heros: {fileID: 1545594846}
   Hammers: {fileID: 1902438099}
   HeroboolArray: 010000
@@ -6768,7 +6766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -177, y: -77}
+  m_AnchoredPosition: {x: -177, y: -88}
   m_SizeDelta: {x: 256, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049291835
@@ -12267,7 +12265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 151, y: -77}
+  m_AnchoredPosition: {x: 151, y: -88}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684822272

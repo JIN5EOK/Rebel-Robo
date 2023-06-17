@@ -10,6 +10,9 @@ scopes = {
 	"last_search.DD5CDD96" = "Enemy"
 	"OpenInspectorPreview.DD5CDD96" = "0"
 	"currentGroup.DD5CDD96" = "all"
+	"last_search.2138236A" = "Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab"
+	"OpenInspectorPreview.2138236A" = "0"
+	"currentGroup.2138236A" = "asset"
 }
 providers = {
 	adb = {
@@ -56,6 +59,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab"
 ]
 searchItemFavorites = [
 ]

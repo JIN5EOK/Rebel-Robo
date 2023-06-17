@@ -22,9 +22,7 @@ public class LobbyEvent : MonoBehaviour
     public GameObject BackGround3;
     public GameObject[] bgArray;
 
-    TextMeshProUGUI[] MissionsText;
-    public GameObject Missions;
-    public GameObject Stars;
+
 
     public GameObject Heros;
     public GameObject Hammers;
@@ -52,7 +50,7 @@ public class LobbyEvent : MonoBehaviour
         missionData = GameObject.Find("MissionData").GetComponent<MissionData>();
 
         bgArray = new GameObject[] { BackGround, BackGround2, BackGround3 };
-        MissionsText = Missions.GetComponentsInChildren<TextMeshProUGUI>();
+        
     }
 
     public void Update()
@@ -129,8 +127,6 @@ public class LobbyEvent : MonoBehaviour
         }
 
         printEquip();
-        
-        
 
 
     }
