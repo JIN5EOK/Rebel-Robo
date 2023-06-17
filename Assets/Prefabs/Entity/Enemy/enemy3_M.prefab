@@ -115,7 +115,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.12
+  m_Radius: 0.25
   m_Center: {x: 0.000000007450581, y: -0.044137463, z: 0}
 --- !u!114 &1936649246623540761
 MonoBehaviour:
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingSpeed: 2
-  floatingHeight: 0.25
+  floatingHeight: 0.15

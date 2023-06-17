@@ -78,13 +78,8 @@ public class AudioManager : MonoSingleton<AudioManager>
 
         if (_playTrs == null)
             _playTrs = Camera.main.transform;
-
-        float volume = 1;
-        // 메인메뉴의 SoundOption 스크립트에서 볼륨을 변경해줘야 반영되는 값이라 메인메뉴 안가면 사운드가 재생이 안됨
-        // float volume;
-        // sfxAudioSource.outputAudioMixerGroup.audioMixer.GetFloat("SFX", out volume);
-        // Debug.Log(volume);
-        AudioSource.PlayClipAtPoint(sfxsClips[_playSfx], _playTrs.position, volume);
+        
+        AudioSource.PlayClipAtPoint(sfxsClips[_playSfx], _playTrs.position);
     }
 
     public void PlayBgm(Bgms _playBgm)

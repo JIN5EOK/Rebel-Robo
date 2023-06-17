@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Bgm/Main
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 11d440f1a9f54ef44b8bbbd8e1983489
-    m_Address: Bgm/Shop
+  - m_GUID: 201c7d3a36c69c84891c927fe2c600bb
+    m_Address: Bgm/Stage
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class FloatingEffect : MonoBehaviour
 {
-    public float floatingSpeed = 1f; // 둥둥거리는 속도
-    public float floatingHeight = 1f; // 떠있는 높이
+    public float floatingSpeed; // 둥둥거리는 속도
+    public float floatingHeight; // 떠있는 높이
 
     private float original; // 물체위치
 
     private void Start()
     {
-        original = transform.position.y;
+        original = transform.position.y + 0.75f;
     }
 
     private void Update()
