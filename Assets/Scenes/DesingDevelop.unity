@@ -3479,7 +3479,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26934
+  m_Name: pb_Mesh-9718
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13132,6 +13132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 658607063}
   Pausebox: {fileID: 496066597}
+  JoyStickL: {fileID: 2052534203}
   EnergyText: {fileID: 1584427805}
   WaveText: {fileID: 829214935}
   countText: {fileID: 237437498}
@@ -13145,7 +13146,6 @@ MonoBehaviour:
   buttonDownTime: 0
   holdTimeThreshold: 3
   textint: 0
-  JoyStickL: {fileID: 2052534203}
 --- !u!224 &622209547
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26280,7 +26280,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26920
+  m_Name: pb_Mesh-9704
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36159,6 +36159,7 @@ MonoBehaviour:
   playerHQ: {fileID: 783027864}
   waveSystem: {fileID: 1855153158}
   ResultWindow: {fileID: 1666408093}
+  checkedHP: 0
 --- !u!1001 &1667297489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46521,7 +46522,7 @@ PrefabInstance:
       objectReference: {fileID: 1214819986}
     - target: {fileID: 5545349022921856647, guid: aeb20b0bb772a174dbfe78625d47490b, type: 3}
       propertyPath: m_VersionIndex
-      value: 2788
+      value: 2791
       objectReference: {fileID: 0}
     - target: {fileID: 5545349023569407128, guid: aeb20b0bb772a174dbfe78625d47490b, type: 3}
       propertyPath: m_RootOrder
@@ -46585,7 +46586,7 @@ PrefabInstance:
       objectReference: {fileID: 193074241}
     - target: {fileID: 5545349023623651334, guid: aeb20b0bb772a174dbfe78625d47490b, type: 3}
       propertyPath: m_VersionIndex
-      value: 1521
+      value: 1524
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeb20b0bb772a174dbfe78625d47490b, type: 3}

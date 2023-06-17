@@ -25,7 +25,7 @@ public class QuestData
         // Hero
         missions.Add("1-1", new Mission("스테이지 클리어", false, 1));
         missions.Add("1-2", new Mission("체력 50%이상 남기고 클리어", false, 1));
-        missions.Add("1-3", new Mission("타워를 1번 이상 회수", false, 1));
+        missions.Add("1-3", new Mission("무기를 이용해 적에게 30번 이상 공격", false, 1));
 
 
     }

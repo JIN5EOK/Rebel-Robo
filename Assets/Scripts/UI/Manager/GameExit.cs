@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,9 @@ public class GameExit : MonoBehaviour
     [SerializeField] private WaveSystem waveSystem;
 
     public GameObject ResultWindow;
-    private int checkedHP;
+    public int checkedHP;
     private int checkedWave;
+    public Action OnActivateResultWindow;
 
     private void OnEnable()
     {
