@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2758170122242762295}
-  m_LocalRotation: {x: -0.00000004371139, y: 1, z: -0.0000000059624403, w: 1.9939422e-16}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 4.5034413, y: -0.9497504, z: 1.475}
   m_LocalScale: {x: 4.671404, y: 4.671404, z: 4.671404}
   m_ConstrainProportionsScale: 0
@@ -101,7 +101,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!135 &3064581680429324943
 SphereCollider:
