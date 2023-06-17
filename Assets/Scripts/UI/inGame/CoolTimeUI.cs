@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SkillUI : MonoBehaviour
+public class CoolTimeUI : MonoBehaviour
 {
-    // ë””ë²„ê·¸ë¥¼ ìœ„í•´ ì„ì‹œë¡œ SkillHandlerë¥¼ ì¸ìŠ¤í™í„°ì—ì„œ ëŒì–´ë‹¤ ì°¸ì¡°í•˜ë„ë¡ ë§Œë“¦, ë‚˜ì¤‘ì— ë‹¤ë¥¸ ë°©ë²•ìœ¼ë¡œ ì ‘ê·¼í•˜ê²Œ ìˆ˜ì • í•„ìš”í•¨ 
+    // µğ¹ö±×¸¦ À§ÇØ ÀÓ½Ã·Î SkillHandler¸¦ ÀÎ½ºÆåÅÍ¿¡¼­ ²ø¾î´Ù ÂüÁ¶ÇÏµµ·Ï ¸¸µê, ³ªÁß¿¡ ´Ù¸¥ ¹æ¹ıÀ¸·Î Á¢±ÙÇÏ°Ô ¼öÁ¤ ÇÊ¿äÇÔ 
     [SerializeField]
     private PlayerSkillHandler playerSkillHandler;
     private Image image;
@@ -15,5 +16,6 @@ public class SkillUI : MonoBehaviour
     {
         image = GetComponent<Image>();
         playerSkillHandler.AddSkillCoolTimeAction(skill, (float _value) => image.fillAmount = _value);
+        
     }
 }

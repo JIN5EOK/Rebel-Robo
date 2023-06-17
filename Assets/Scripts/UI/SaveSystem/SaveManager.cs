@@ -11,7 +11,6 @@ public class SaveManager : MonoBehaviour
     GameManager gameManager;
     ProductData productData;
     MissionData missionData;
-    MissionManager missionManager;
 
     public static SaveManager Instance;
 
@@ -42,7 +41,7 @@ public class SaveManager : MonoBehaviour
     {
         GameManager gameManager = GameManager.Instance;
         ProductData productData = ProductData.Instance;
-        MissionData missionManager = MissionData.Instance;
+        MissionData missionData = MissionData.Instance;
         //(int t_savedCoin, bool[] t_saveHero, bool[] t_saveTower, bool[] t_saveSkill, bool[] t_saveEquip, int t_LastClear, bool[,] t_saveMission)
         //원래라면 플레이어 정보나 인벤토리 등에서 긁어모아야 할 정보들.
         SaveData sd = new SaveData(

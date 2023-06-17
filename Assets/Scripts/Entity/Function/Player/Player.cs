@@ -39,7 +39,7 @@ public class Player : Entity, IMoveable
     private CoolTime atkCoolTime;
 
     [SerializeField] private Sfxs attackSound;
-    
+    public int AttackCount = 0;
     private void Start()
     { 
 
@@ -137,6 +137,7 @@ public class Player : Entity, IMoveable
         {
             if(hit.transform.TryGetComponent(out enemy))
             {
+                AttackCount++;
                 targetPos = hit.point;
                 TowerProjectile b = TowerProjectileFactory.Instance.Spawn(TowerProjectiles.Bullet, pet.transform.position, Quaternion.identity);
                 b.Launch(hit.transform.gameObject.GetComponent<Enemy>(), (int)status.Dmg);
@@ -194,8 +195,5 @@ public class Player : Entity, IMoveable
     {
         Attack(); 
     }
-    public PlayerSkillHandler GetPlayerSkillHandler()
-    {
-        return skillHandler;
-    }
+    
 }

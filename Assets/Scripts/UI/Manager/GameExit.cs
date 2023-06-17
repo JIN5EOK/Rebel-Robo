@@ -7,7 +7,6 @@ public class GameExit : MonoBehaviour
 {
     [SerializeField] private PlayerHQ playerHQ;
     [SerializeField] private WaveSystem waveSystem;
-    [SerializeField] private MissionManager missionManager;
 
     public GameObject ResultWindow;
     public int checkedHP;

@@ -75,7 +75,7 @@ public class MissionData : MonoBehaviour
     //public string[,] MissionArray = new string[5, 3];
     
     
-    public string[,] MissionArray = { { "스테이지 클리어", "체력 50%이상 남기고 클리어", "타워를 1번 이상 회수" },
+    public string[,] MissionArray = { { "스테이지 클리어", "체력 50%이상 남기고 클리어", "무기를 이용해 적에게 30번 이상 공격" },
                                         { "스테이지 클리어", "체력 50%이상 남기고 클리어", "스킬 3번 이상 사용" },
                                          { "스테이지 클리어", "체력 50%이상 남기고 클리어", "무기를 이용해 적을 10마리 이상 처치" },
                                         { "스테이지 클리어", "체력 50%이상 남기고 클리어", "장애물을 3번 이상 제거" },
