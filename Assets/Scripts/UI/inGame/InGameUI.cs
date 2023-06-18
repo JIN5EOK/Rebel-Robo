@@ -48,12 +48,12 @@ public class InGameUI : MonoBehaviour
         for (int i = 0; i < towerButtons.Length; i++)
         {
             if (ProductData.Instance.buyedTower[i] == false)
-                Destroy(towerButtons[i].gameObject);
+                towerButtons[i].transform.localPosition = new Vector3(999,999,999);
         }
         for (int i = 0; i < skillButtons.Length; i++)
         {
             if (ProductData.Instance.buyedSkill[i] == false)
-                Destroy(skillButtons[i].gameObject);
+                skillButtons[i].transform.localPosition = new Vector3(999,999,999);
         }
 
         countText.text = "3";
