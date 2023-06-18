@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1361,8 +1361,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294831678
-  m_fontColor: {r: 0.24313727, g: 0.9333334, b: 0.9921569, a: 1}
+    rgba: 4292466903
+  m_fontColor: {r: 0.8431373, g: 0.8470589, b: 0.85098046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3012,8 +3012,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294831678
-  m_fontColor: {r: 0.24313727, g: 0.9333334, b: 0.9921569, a: 1}
+    rgba: 4292466903
+  m_fontColor: {r: 0.8431373, g: 0.8470589, b: 0.85098046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4150,7 +4150,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0173597
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -15247,8 +15247,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294831678
-  m_fontColor: {r: 0.24313727, g: 0.9333334, b: 0.9921569, a: 1}
+    rgba: 4292466903
+  m_fontColor: {r: 0.8431373, g: 0.8470589, b: 0.85098046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

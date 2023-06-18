@@ -15,7 +15,7 @@ C:/Users/user/Documents/unity_repos/Rebel-Robo
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-64422
+49947
 Successfully changed project path to: C:/Users/user/Documents/unity_repos/Rebel-Robo
 C:/Users/user/Documents/unity_repos/Rebel-Robo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/user/Documents/unity_repos/Rebel-Robo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9468] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 111652433 [EditorId] 111652433 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22068] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 2428710221 [EditorId] 2428710221 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9468] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 111652433 [EditorId] 111652433 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22068] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 2428710221 [EditorId] 2428710221 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 97.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 86.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008710 seconds.
+Registered in 0.008787 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 86.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.522 seconds
+- Completed reload, in  0.528 seconds
 Domain Reload Profiling:
-	ReloadAssembly (523ms)
+	ReloadAssembly (528ms)
 		BeginReloadAssembly (70ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (359ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (361ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (73ms)
+			SetupTypeCache (72ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (19ms)
+			RebuildScriptCaches (20ms)
 			SetupLoadedEditorAssemblies (225ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (77ms)
+				RefreshPlugins (87ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (94ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010845 seconds.
+Registered in 0.009746 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.099 seconds
+- Completed reload, in  1.174 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1099ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (100ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (897ms)
-			LoadAssemblies (95ms)
+		EndReloadAssembly (961ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
+			SetupTypeCache (226ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (515ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (550ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (301ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (319ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4885 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5346.
 Memory consumption went from 183.1 MB to 181.8 MB.
-Total: 3.484200 ms (FindLiveObjects: 0.317300 ms CreateObjectMapping: 0.227400 ms MarkObjects: 2.658500 ms  DeleteObjects: 0.280000 ms)
+Total: 3.431300 ms (FindLiveObjects: 0.277400 ms CreateObjectMapping: 0.166400 ms MarkObjects: 2.714300 ms  DeleteObjects: 0.272500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,3 +162,142 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009057 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1015ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (776ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (218ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4769 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (1.3 MB). Loaded Objects now: 5341.
+Memory consumption went from 175.7 MB to 174.4 MB.
+Total: 3.618700 ms (FindLiveObjects: 0.280700 ms CreateObjectMapping: 0.203500 ms MarkObjects: 2.815700 ms  DeleteObjects: 0.317800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 50164.764680 seconds.
+  path: Assets/UI_robo/needtrans/gun (2).png
+  artifactKey: Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/needtrans/gun (2).png using Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac2e4b6eaea7ec7f73aa850aa4c29aa') in 0.101778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.649387 seconds.
+  path: Assets/UI_robo/needtrans/gun (2).png
+  artifactKey: Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/needtrans/gun (2).png using Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94245f76fd9e3669653439b179d58597') in 0.016038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.054280 seconds.
+  path: Assets/UI_robo/needtrans/gun (2).png
+  artifactKey: Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/needtrans/gun (2).png using Guid(6cbc00603c805dd4d9ff51f853b9af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6e9fb2a88867941318dc84c4a7b388') in 0.008525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 600.449468 seconds.
+  path: Assets/UI_robo/nest.png
+  artifactKey: Guid(7a3dc5401547d194ab9eccf9d58edc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/nest.png using Guid(7a3dc5401547d194ab9eccf9d58edc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528b3ae8c6e9881166109a17d3d63cda') in 0.058512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UI_robo/play.png
+  artifactKey: Guid(8bd44b7564494ac46b6e25d5963ff07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/play.png using Guid(8bd44b7564494ac46b6e25d5963ff07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c85582ee1fc0cdc5789f23311407b2') in 0.021333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI_robo/pet.png
+  artifactKey: Guid(c4ae3e40bde4fc241be6a96cea50d35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/pet.png using Guid(c4ae3e40bde4fc241be6a96cea50d35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fc467c34eea8ae0b042d92d049f27e') in 0.073035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052951 seconds.
+  path: Assets/UI_robo/reset.png
+  artifactKey: Guid(78fdfa315f01a4348886fa4f706aee17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/reset.png using Guid(78fdfa315f01a4348886fa4f706aee17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0e524d0f34b5319fcc6472a3094c64') in 0.021412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/UI_robo/restart.png
+  artifactKey: Guid(399a51b0b8f136a4ebc1ac9816f1cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/restart.png using Guid(399a51b0b8f136a4ebc1ac9816f1cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce74b99c0be3cbbfa234670110670e3') in 0.015248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/UI_robo/stagebox.png
+  artifactKey: Guid(8c300dedf97601b4a96755b803f3ee23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/stagebox.png using Guid(8c300dedf97601b4a96755b803f3ee23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6da9e40a9895ce5ad6763172beecd14') in 0.033286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.153654 seconds.
+  path: Assets/UI_robo/startbutton.png
+  artifactKey: Guid(40ab9ac6ce4add345986e4d89e0e8c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/startbutton.png using Guid(40ab9ac6ce4add345986e4d89e0e8c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504e79bfcfea525025c844be7033dcb2') in 0.017038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI_robo/tower2d4-removebg-preview.png
+  artifactKey: Guid(fadc7c0d85ae7604cb2e72269d8f10d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/tower2d4-removebg-preview.png using Guid(fadc7c0d85ae7604cb2e72269d8f10d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f23f6558dfcc29fc5b5ca21f138f81') in 0.025234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/UI_robo/titlebox.png
+  artifactKey: Guid(eada3fcfde8090c449974e35047281ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/titlebox.png using Guid(eada3fcfde8090c449974e35047281ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb86d3a52173bcc73c25515fa460ca84') in 0.030107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/UI_robo/tower2d3-removebg-preview.png
+  artifactKey: Guid(e0f341e92e7f0484fa78606aec455672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_robo/tower2d3-removebg-preview.png using Guid(e0f341e92e7f0484fa78606aec455672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa075fa4509c04009edd3f917531b32') in 0.027541 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
