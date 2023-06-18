@@ -148,6 +148,7 @@ public class InGameClick : MonoBehaviour
                 break;
             case 1:
                 resetMissions();
+                LoadSceneManager.LoadScene("DesingDevelop");
                 break;
         }
     }
@@ -183,7 +184,8 @@ public class InGameClick : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            //missionManager.stageMissions[0, i] = false;
+            missionManager.stageMissions[0, i] = false;
+            
         }
     }
 
