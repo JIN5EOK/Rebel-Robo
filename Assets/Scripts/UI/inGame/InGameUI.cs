@@ -61,7 +61,7 @@ public class InGameUI : MonoBehaviour
 
         inGameClick = FindObjectOfType<InGameClick>();
         buttons = inGameClick.ClickButtons;
-    }
+    }   
     private void UpdateCountText()
     {
         if (timer < 2f)
