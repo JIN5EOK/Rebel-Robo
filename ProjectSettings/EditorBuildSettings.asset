@@ -15,19 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 6587cd08be7e17d4991aa4449ab3dc9b
   - enabled: 1
-    path: Assets/Scenes/DesingDevelop.unity
-    guid: 645fe4537d2876b41837d6257a4bda23
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 1584cc05838510b4fb1251c71b115c41
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/DesingDevelop.unity
+    guid: 74cf50976a6a94f4e952c2442b359bf4
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f0af1084a58eaf943a23849d2a0f700b, type: 2}
