@@ -16,27 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: fff6d393a300cc9469986df93c9e2f75
-  m_SerializeEntries:
-  - m_GUID: 892628c3f6409ad46a3bda8e49dbf503
-    m_Address: Assets/Prefabs/Entity/Item/greenbottle.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ce70754ad73d5d24abe463b2ff29c1da
-    m_Address: Assets/Prefabs/Entity/Item/Bottle_Mana.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 84a8569cf2943644ab3fe67e97ec06eb
-    m_Address: Assets/Prefabs/Entity/Enemy/enemy3.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 74405a89dc18bd9419866f79e8d7ec46
-    m_Address: Assets/Prefabs/Entity/Enemy/enemy1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f209afa623240b243b974b5d627e0b12
-    m_Address: Assets/Prefabs/Entity/Enemy/enemy2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:

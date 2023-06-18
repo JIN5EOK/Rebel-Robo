@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4c8fabf7795468c4bb3681d78c13a860, type: 2}
+  - {fileID: 2100000, guid: 0f898b366fe4d74448ab744bb3a4308d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 11400000, guid: 84be1acf64c5a3241b6b189184581392, type: 2}
+  damagedMaterial: {fileID: 2100000, guid: d32b39c7c2214cc41a75b0c831a6ec80, type: 2}
 --- !u!54 &8250128118418176111
 Rigidbody:
   m_ObjectHideFlags: 0

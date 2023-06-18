@@ -17,16 +17,16 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 15cba9ce189c2194b90b02ed8d35821e
   m_SerializeEntries:
-  - m_GUID: 81f0141286cd5244cbc9539f0e019c3e
-    m_Address: Assets/Prefabs/Entity/Enemy/EnemyLv1.prefab
+  - m_GUID: 84a8569cf2943644ab3fe67e97ec06eb
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy3.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: a14e363b890266541bd433b286f460f2
-    m_Address: Assets/Prefabs/Entity/Enemy/EnemyLv2.prefab
+  - m_GUID: 74405a89dc18bd9419866f79e8d7ec46
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy1.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: a084a63b3e36ad244b3bbc67440a4144
-    m_Address: Assets/Prefabs/Entity/Enemy/EnemyLv3.prefab
+  - m_GUID: f209afa623240b243b974b5d627e0b12
+    m_Address: Assets/Prefabs/Entity/Enemy/enemy2.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

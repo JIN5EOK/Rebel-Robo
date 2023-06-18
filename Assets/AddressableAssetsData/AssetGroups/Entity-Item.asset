@@ -21,6 +21,14 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Item/EnergyItem.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 892628c3f6409ad46a3bda8e49dbf503
+    m_Address: Assets/Prefabs/Entity/Item/greenbottle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce70754ad73d5d24abe463b2ff29c1da
+    m_Address: Assets/Prefabs/Entity/Item/Bottle_Mana.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:
