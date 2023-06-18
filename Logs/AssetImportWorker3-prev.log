@@ -15,7 +15,7 @@ C:/Users/user/Documents/unity_repos/Rebel-Robo
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-64422
+53488
 Successfully changed project path to: C:/Users/user/Documents/unity_repos/Rebel-Robo
 C:/Users/user/Documents/unity_repos/Rebel-Robo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/user/Documents/unity_repos/Rebel-Robo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [37196] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 1402715546 [EditorId] 1402715546 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20380] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 475091110 [EditorId] 475091110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [37196] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 1402715546 [EditorId] 1402715546 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20380] Host "[IP] 192.168.45.60 [Port] 0 [Flags] 2 [Guid] 475091110 [EditorId] 475091110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I3K4R6T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 92.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,37 +67,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009565 seconds.
+Registered in 0.009287 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.536 seconds
+- Completed reload, in  0.552 seconds
 Domain Reload Profiling:
-	ReloadAssembly (536ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (553ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (362ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (379ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (73ms)
+			SetupTypeCache (78ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (224ms)
+			SetupLoadedEditorAssemblies (236ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
+				RefreshPlugins (90ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadAttributes (98ms)
 				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -105,37 +105,37 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011592 seconds.
+Registered in 0.010753 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\unity_repos\Rebel-Robo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.662 seconds
+- Completed reload, in  1.151 seconds
 Domain Reload Profiling:
-	ReloadAssembly (662ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (1152ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (453ms)
-			LoadAssemblies (76ms)
+		EndReloadAssembly (940ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (210ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (202ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (540ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (67ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -144,12 +144,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4857 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (1.3 MB). Loaded Objects now: 5306.
-Memory consumption went from 180.4 MB to 179.0 MB.
-Total: 2.592300 ms (FindLiveObjects: 0.309300 ms CreateObjectMapping: 0.114100 ms MarkObjects: 1.863600 ms  DeleteObjects: 0.304500 ms)
+Unloading 4875 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5337.
+Memory consumption went from 182.6 MB to 181.3 MB.
+Total: 4.817700 ms (FindLiveObjects: 0.359000 ms CreateObjectMapping: 0.120000 ms MarkObjects: 3.992900 ms  DeleteObjects: 0.344800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,52 +164,40 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 49243.702156 seconds.
-  path: Assets/UnityTechnologies/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab
-  artifactKey: Guid(83e55d3418297934fab882559d009285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityTechnologies/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab using Guid(83e55d3418297934fab882559d009285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd737b028a35ba38ef783acec1596f753') in 0.133463 seconds 
+  Time since last request: 52538.815806 seconds.
+  path: Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat
+  artifactKey: Guid(288a5b9b8b6335d48aff417d94984654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat using Guid(288a5b9b8b6335d48aff417d94984654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cabf0cb7c1bbf462341978a52fa0a02') in 0.109465 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab
-  artifactKey: Guid(4aaa70e18b1ff99419e47f8336c3ce4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab using Guid(4aaa70e18b1ff99419e47f8336c3ce4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7afd6431d916c5d4361b7cb7952e9769') in 0.014069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.239923 seconds.
-  path: Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat
-  artifactKey: Guid(764c0a66e38e60d41956a4d2e9c403a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat using Guid(764c0a66e38e60d41956a4d2e9c403a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccaf78def8fd9ab785a926294657250') in 0.031010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png
-  artifactKey: Guid(67cd92f5e829f0349970e5b0286e61e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png using Guid(67cd92f5e829f0349970e5b0286e61e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8184c7f2a68ef186e56075473868d3ff') in 0.077243 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerExtinguisherEffect.prefab
-  artifactKey: Guid(05006c1c53aa2284dbaededfc6eec78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerExtinguisherEffect.prefab using Guid(05006c1c53aa2284dbaededfc6eec78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651008270ec8790bbe5c7ba6e014da61') in 0.009850 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWoodEffect.prefab
-  artifactKey: Guid(a0ff7ecd54955fd4f8e4b026ef56520f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWoodEffect.prefab using Guid(a0ff7ecd54955fd4f8e4b026ef56520f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7741474cc27c653b554bbf46e4e808') in 0.017879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/UnityTechnologies/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerEffect.prefab
-  artifactKey: Guid(a60a75fdadab5de428529a5b8ef0426a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityTechnologies/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerEffect.prefab using Guid(a60a75fdadab5de428529a5b8ef0426a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8ad7216f2c98aeb0f4fc56df65ed82') in 0.009132 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
+  Time since last request: 0.000021 seconds.
   path: Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat
-  artifactKey: Guid(525902f982b7fd048bba90b45430960e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat using Guid(525902f982b7fd048bba90b45430960e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba491b846deb697a606ab23a335f909e') in 0.006709 seconds 
+  artifactKey: Guid(96664f7496afb624899961c71199250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat using Guid(96664f7496afb624899961c71199250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185748e6c87696fa961eadd6f681e10e') in 0.013611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat
+  artifactKey: Guid(ffc2577c524640343a7c2543cd93bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat using Guid(ffc2577c524640343a7c2543cd93bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699b0f2f3f598215c1835ed230519e69') in 0.021735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.750422 seconds.
+  path: Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif
+  artifactKey: Guid(711c50d61658e864ab5325f9c9d645c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif using Guid(711c50d61658e864ab5325f9c9d645c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bdb2cae68d5be943d6cfa784ae1683') in 0.032733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif
+  artifactKey: Guid(ab1e0cccc8b71a14797b2bf1b53df180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif using Guid(ab1e0cccc8b71a14797b2bf1b53df180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84098689b680e9e63d4ace1c942040e7') in 0.015864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif
+  artifactKey: Guid(c970afc8f2c988f4a87db4c0c6083c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif using Guid(c970afc8f2c988f4a87db4c0c6083c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c2e596926ae7de1c7f0fc8725c614c') in 0.023577 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

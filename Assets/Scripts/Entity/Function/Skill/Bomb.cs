@@ -44,8 +44,9 @@ public class Bomb : Skill
         }
 
         //김하늘 작성
-        GameObject tmp = Instantiate(explosion, this.transform.position, Quaternion.identity);
 
         Destroyed();
-    }
+         GameObject tmp = Instantiate(explosion, this.transform.position, Quaternion.identity);
+         Destroy(tmp, 0.2f);
+             }
 }
