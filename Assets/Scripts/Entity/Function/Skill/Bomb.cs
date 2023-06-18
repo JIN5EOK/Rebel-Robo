@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class Bomb : Skill
 {
+    //김하늘 작성 06-18
+    public GameObject explosion; //폭발 효과 프리팹 할당
+
+
     public override void Execute(Player _player, ref bool _isSuccese)
     {
         base.Execute(_player, ref _isSuccese);
@@ -14,6 +18,8 @@ public class Bomb : Skill
         StartCoroutine(SetBoom());
         _isSuccese = true;
     }
+
+
 
     IEnumerator SetBoom()
     {
@@ -36,6 +42,10 @@ public class Bomb : Skill
             }
             Debug.Log(hit.transform.name);
         }
+
+        //김하늘 작성
+        GameObject tmp = Instantiate(explosion, this.transform.position, Quaternion.identity);
+
         Destroyed();
     }
 }
