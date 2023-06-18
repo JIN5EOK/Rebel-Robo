@@ -12,16 +12,16 @@ public class LobbyEvent : MonoBehaviour
     
     public GameObject StageMenu;
     public GameObject blackFilter;
-
     public GameObject OptionMenu;
-
     public GameObject ShopMenu;
+    public GameObject MissionMenu;
 
     public GameObject BackGround;
     public GameObject BackGround2;
     public GameObject BackGround3;
     public GameObject[] bgArray;
 
+    public GameObject LockStage1;
 
 
     public GameObject Heros;
@@ -173,7 +173,7 @@ public class LobbyEvent : MonoBehaviour
                 
             }
         }
-        
+        LockStage();
     }
     
     public void NextStage()
@@ -193,6 +193,19 @@ public class LobbyEvent : MonoBehaviour
                 }
             }
         }
+        LockStage();
+    }
+
+    private void LockStage()
+    {
+        if(gameManager.chapterNumber == 2)
+        {
+            LockStage1.SetActive(true);
+        }
+        else
+        {
+            LockStage1.SetActive(false);
+        }
         
     }
 
@@ -202,6 +215,21 @@ public class LobbyEvent : MonoBehaviour
         Hammers.transform.GetChild(0).transform.GetChild(gameManager.hammerIndex).gameObject.SetActive(true);
     }
     
+    public void MissionClicked()
+    {
+        if(MissionMenu != null)
+        {
+            MissionMenu.SetActive(true);
+        }
+    }
+
+    public void ExitMissionMenu()
+    {
+        if (MissionMenu != null)
+        {
+            MissionMenu.SetActive(false);
+        }
+    }
 
     public void OptionClicked()
     {

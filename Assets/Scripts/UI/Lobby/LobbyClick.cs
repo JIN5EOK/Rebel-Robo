@@ -114,6 +114,16 @@ public class LobbyClick : MonoBehaviour
         lobbyEvent.ExitStageMenu();
     }
 
+    public void startMission()
+    {
+        lobbyEvent.MissionClicked();
+    }
+
+    public void exitMission()
+    {
+        lobbyEvent.ExitMissionMenu();
+    }
+
     public void startOption()
     {
         lobbyEvent.OptionClicked();
@@ -147,4 +157,6 @@ public class LobbyClick : MonoBehaviour
         saveManager.Save();
         
     }
+
+    
 }
