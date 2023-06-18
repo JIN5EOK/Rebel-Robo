@@ -36,12 +36,12 @@ public class ShopData
         products.Add("Hero_3", new Product("Hero_3", false, 30));
 
         // Tower
-        products.Add("레이저 타워", new Product("레이저 타워", true, 2));
-        products.Add("방사 타워", new Product("방사 타워", false, 4));
-        products.Add("기관총 타워", new Product("기관총 타워", false, 6));
-        products.Add("로켓 타워", new Product("로켓 타워", false, 8));
-        products.Add("Tower_5", new Product("Tower_5", false, 10));
-        products.Add("Tower_6", new Product("Tower_6", false, 12));
+        products.Add("기관총 타워", new Product("기관총 타워", true, 2));
+        products.Add("화염 타워", new Product("화염 타워", false, 4));
+        products.Add("미사일 타워", new Product("미사일 타워", false, 6));
+        products.Add("화력 UP 화염", new Product("화력 UP 화염", false, 8));
+        products.Add("속도 UP 미사일", new Product("속도 UP 미사일", false, 10));
+        products.Add("거리 UP 미사일", new Product("거리 UP 미사일", false, 12));
 
         // Skill
         products.Add("폭탄", new Product("폭탄", false, 4));
@@ -50,7 +50,7 @@ public class ShopData
 
         // Equip
         products.Add("망치", new Product("망치", true, 0));
-        products.Add("망치_2", new Product("망치_2", false, 20));
+        products.Add("속도 up 망치", new Product("속도 up 망치", false, 20));
     }
 
     public bool IsProductPurchased(string productName)
@@ -105,12 +105,12 @@ public class ProductData : MonoBehaviour
         buyedHero[2] = shopData.IsProductPurchased("Hero_3");
 
         buyedTower = new bool[6];
-        buyedTower[0] = shopData.IsProductPurchased("레이저 타워");
-        buyedTower[1] = shopData.IsProductPurchased("방사 타워");
-        buyedTower[2] = shopData.IsProductPurchased("기관총 타워");
-        buyedTower[3] = shopData.IsProductPurchased("로켓 타워");
-        buyedTower[4] = shopData.IsProductPurchased("Tower_5");
-        buyedTower[5] = shopData.IsProductPurchased("Tower_6");
+        buyedTower[0] = shopData.IsProductPurchased("기관총 타워");
+        buyedTower[1] = shopData.IsProductPurchased("화염 타워");
+        buyedTower[2] = shopData.IsProductPurchased("미사일 타워");
+        buyedTower[3] = shopData.IsProductPurchased("화력 UP 화염");
+        buyedTower[4] = shopData.IsProductPurchased("속도 UP 미사일");
+        buyedTower[5] = shopData.IsProductPurchased("거리 UP 미사일");
 
         buyedSkill = new bool[3];
         buyedSkill[0] = shopData.IsProductPurchased("폭탄");
@@ -119,7 +119,7 @@ public class ProductData : MonoBehaviour
 
         buyedEquip = new bool[2];
         buyedEquip[0] = shopData.IsProductPurchased("망치");
-        buyedEquip[1] = shopData.IsProductPurchased("망치_2");
+        buyedEquip[1] = shopData.IsProductPurchased("속도 up 망치");
 
         priceHero = new int[3];
         priceHero[0] = shopData.GetProductPrice("Hero_1");
@@ -127,12 +127,12 @@ public class ProductData : MonoBehaviour
         priceHero[2] = shopData.GetProductPrice("Hero_3");
 
         priceTower = new int[6];
-        priceTower[0] = shopData.GetProductPrice("레이저 타워");
-        priceTower[1] = shopData.GetProductPrice("방사 타워");
-        priceTower[2] = shopData.GetProductPrice("기관총 타워");
-        priceTower[3] = shopData.GetProductPrice("로켓 타워");
-        priceTower[4] = shopData.GetProductPrice("Tower_5");
-        priceTower[5] = shopData.GetProductPrice("Tower_6");
+        priceTower[0] = shopData.GetProductPrice("기관총 타워");
+        priceTower[1] = shopData.GetProductPrice("화염 타워");
+        priceTower[2] = shopData.GetProductPrice("미사일 타워");
+        priceTower[3] = shopData.GetProductPrice("화력 UP 화염");
+        priceTower[4] = shopData.GetProductPrice("속도 UP 미사일");
+        priceTower[5] = shopData.GetProductPrice("거리 UP 미사일");
 
         priceSkill = new int[3];
         priceSkill[0] = shopData.GetProductPrice("폭탄");
@@ -141,7 +141,7 @@ public class ProductData : MonoBehaviour
 
         priceEquip = new int[2];
         priceEquip[0] = shopData.GetProductPrice("망치");
-        priceEquip[1] = shopData.GetProductPrice("망치_2");
+        priceEquip[1] = shopData.GetProductPrice("속도 up 망치");
     }
 
     void Start()
