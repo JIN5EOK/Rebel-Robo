@@ -20,6 +20,6 @@ public class TowerProjectileFactory : EntityFactory<TowerProjectile, TowerProjec
         EntityAddresses = new Dictionary<TowerProjectiles, string>();
         EntityAddresses.Add(TowerProjectiles.Bullet, "Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab");
         EntityAddresses.Add(TowerProjectiles.Missile, "Assets/Prefabs/Entity/Projectile/Tower/Missile.prefab");
-        EntityAddresses.Add(TowerProjectiles.Flame, "Assets/Prefabs/Entity/Projectile/FlameEffect.prefab");
+        EntityAddresses.Add(TowerProjectiles.Flame, "Assets/Prefabs/Entity/Projectile/Tower/Flame.prefab");
     }
 }

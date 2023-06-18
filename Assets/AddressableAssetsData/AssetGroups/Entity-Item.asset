@@ -17,6 +17,10 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 17bde099b40c80743bb33cca846e8a09
   m_SerializeEntries:
+  - m_GUID: 5513ab0d49ac2da419fa0d3ee82c4cf5
+    m_Address: Assets/Prefabs/Entity/Item/EnergyItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 892628c3f6409ad46a3bda8e49dbf503
     m_Address: Assets/Prefabs/Entity/Item/greenbottle.prefab
     m_ReadOnly: 0
