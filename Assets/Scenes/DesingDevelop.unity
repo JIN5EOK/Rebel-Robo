@@ -3065,11 +3065,11 @@ RectTransform:
   m_Father: {fileID: 335456540}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -639.99994, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 658.00006, y: 310}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &155677656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13263,6 +13263,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9aafb438f215a34da86fcccdbfdd116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerButtons:
+  - {fileID: 228089937}
+  - {fileID: 241660744}
+  - {fileID: 315108536}
+  skillButtons:
+  - {fileID: 1876866570}
+  - {fileID: 766226597}
   player: {fileID: 658607063}
   Pausebox: {fileID: 496066597}
   JoyStickL: {fileID: 2052534203}
@@ -24120,11 +24127,11 @@ RectTransform:
   m_Father: {fileID: 335456540}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 900, y: 220}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -241, y: 140}
   m_SizeDelta: {x: 160, y: 160}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1082242426
 MonoBehaviour:
   m_ObjectHideFlags: 0

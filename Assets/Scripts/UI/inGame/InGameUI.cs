@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+    public Button[] towerButtons;
+    public Button[] skillButtons;
+
     public Player player;
     private Button[] buttons;
     private InGameClick inGameClick;
@@ -42,6 +45,17 @@ public class InGameUI : MonoBehaviour
 
     private void Start()
     {
+        for (int i = 0; i < towerButtons.Length; i++)
+        {
+            if (ProductData.Instance.buyedTower[i] == false)
+                Destroy(towerButtons[i].gameObject);
+        }
+        for (int i = 0; i < skillButtons.Length; i++)
+        {
+            if (ProductData.Instance.buyedSkill[i] == false)
+                Destroy(skillButtons[i].gameObject);
+        }
+
         countText.text = "3";
         InvokeRepeating(nameof(UpdateCountText), 1f, 1f);
 
