@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Projectile/Flame.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 92844dbb51f7ed841847bf9ecb4ef0f0
+    m_Address: Assets/Prefabs/Entity/Projectile/Tower/missalie.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:
