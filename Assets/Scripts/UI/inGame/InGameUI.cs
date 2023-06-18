@@ -108,28 +108,11 @@ public class InGameUI : MonoBehaviour
 
     public void UpdateLoadingBar()
     {
-        
+
         // 버튼을 누른 시간에 따라 게이지 업데이트
         float fillAmount = Mathf.Clamp01(buttonDownTime / holdTimeThreshold);
         player.animator.SetFloat("makingPer", fillAmount);
-        switch(selectedBar)
-        {
-            case 1:
-                towerBar1.fillAmount = fillAmount;
-                break;
-            case 2:
-                towerBar2.fillAmount = fillAmount;
-                break;
-            case 3:
-                towerBar3.fillAmount = fillAmount;
-                break;
-            case 11:
-                repairBar.fillAmount = fillAmount;
-                break;
-            case 12:
-                cellBar.fillAmount = fillAmount;
-                break;
-        }
+        towerBar1.fillAmount = fillAmount;
         if (buttonDownTime > 0)
         {
             JoyStickL.SetActive(false);
@@ -150,26 +133,9 @@ public class InGameUI : MonoBehaviour
 
     public void ResetLoadingBar(int index)
     {
-        switch(index)
-        {
-            case 1:
-                towerBar1.fillAmount = 0f;
-                break;
-            case 2:
-                towerBar2.fillAmount = 0f;
-                break;
-            case 3:
-                towerBar3.fillAmount = 0f;
-                break;
-            case 11:
-                repairBar.fillAmount = 0f;
-                break;
-            case 12:
-                cellBar.fillAmount = 0f;
-                break;
-        }
+        towerBar1.fillAmount = 0f;
         // 게이지 초기화
-        
+
     }
 
     public void pauseGame(int index)
