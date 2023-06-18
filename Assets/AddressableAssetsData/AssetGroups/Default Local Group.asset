@@ -16,7 +16,15 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: fff6d393a300cc9469986df93c9e2f75
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: e3be7140c657f9144bf649b6b6f1a105
+    m_Address: Assets/Prefabs/Entity/Projectile/FlameEffect.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 11272d7d2b7d3af4ba844d8fe20ca457
+    m_Address: Assets/Prefabs/Entity/Projectile/ExplosionEffect.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9fd9d9e8620c2cd4596b2d52ccded33f, type: 2}
   m_SchemaSet:

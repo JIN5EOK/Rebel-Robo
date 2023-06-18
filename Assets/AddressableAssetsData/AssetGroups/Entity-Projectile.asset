@@ -21,10 +21,6 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Entity/Projectile/Tower/Bullet.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: d40ff23e0ea66c246b7eaa59cdc13e41
-    m_Address: Assets/Prefabs/Entity/Projectile/Tower/Flame.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: d5164eaa7b26c76488449d2e4fabd007
     m_Address: Assets/Prefabs/Entity/Projectile/Tower/Missile.prefab
     m_ReadOnly: 0
