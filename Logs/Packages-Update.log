@@ -23,3 +23,11 @@ The following packages were added:
   com.unity.2d.tilemap@1.0.0
   com.unity.postprocessing@3.2.2
   com.unity.progrids@3.0.3-preview.4
+
+=== Sun Jun 18 15:01:41 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.postprocessing@3.2.2
