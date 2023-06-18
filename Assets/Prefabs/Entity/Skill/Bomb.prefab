@@ -115,7 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12afc551ccfd12941a0d2264d3e19ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 5374181796806074869, guid: 11272d7d2b7d3af4ba844d8fe20ca457, type: 3}
+  explosion: {fileID: 5552394067564184442, guid: 5d19d8dd247a65d40830a68d2db488ba, type: 3}
+  boomSound: 0
 --- !u!135 &7316490811819909923
 SphereCollider:
   m_ObjectHideFlags: 0
