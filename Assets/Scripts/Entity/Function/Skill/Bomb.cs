@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Bomb : Skill
 {
-    //김하늘 작성 06-18
+    //해당 부분 김하늘 작성 06-18
     public GameObject explosion; //폭발 효과 프리팹 할당
 
 

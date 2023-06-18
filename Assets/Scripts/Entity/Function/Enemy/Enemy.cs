@@ -20,12 +20,25 @@ public class Enemy : Entity, IMoveable, IDamageable
 
     private Rigidbody rigid;
 
+    //해당 부분 김하늘 작성  06-18
+    private Material originalMaterial; //원본 메테리얼
+    private Renderer materialRenderer; //랜더러
+
+    [SerializeField]
+    private Material damagedMaterial; //데미지 입을 당시 할당된 메테리얼
+    
+
     public void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
         rigid = GetComponent<Rigidbody>();
         Hp = status.MaxHp;
         nav.speed = status.MoveSpd;
+
+        //김하늘 작성
+        materialRenderer = GetComponent<Renderer>();
+        originalMaterial = materialRenderer.material;
+
     }
 
     void OnEnable()
@@ -53,11 +66,22 @@ public class Enemy : Entity, IMoveable, IDamageable
     {
         Debug.Log(name +" "+ _dmg+ "의 데미지!");
         Hp -= _dmg;
+
+        // 해당 부분 김하늘 작성
+        StartCoroutine(FlashMaterial()); //반짝이는 코루틴
         
         if (Hp <= 0)
         {
             Destroyed();
         }
+    }
+
+    //해당 부분 김하늘 작성
+    private IEnumerator FlashMaterial()
+    {
+        materialRenderer.material = damagedMaterial;
+        yield return new WaitForSeconds(0.1f);
+        materialRenderer.material = originalMaterial;
     }
 
     public override void Destroyed()

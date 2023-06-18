@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 11400000, guid: bcf2305eaa4911344a06d4495f9bb9a0, type: 2}
+  damagedMaterial: {fileID: 2100000, guid: 5a6c374925594574c9f85baa61b603f9, type: 2}
